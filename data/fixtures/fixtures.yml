@@ -1,0 +1,113 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+#   fabien:
+#     username: fabien
+#     password: changeme
+#     name:     Fabien Potencier
+#     email:    fabien.potencier@symfony-project.com
+#   kris:
+#     username: Kris.Wallsmith
+#     password: changeme
+#     name:     Kris Wallsmith
+#     email:    kris.wallsmith@symfony-project.com
+
+#  Stories -------
+
+Story:
+  story1:
+    pos_x: 250
+    pos_y: 250
+    title: Épopée sur le grand Sjaneul
+    place: Groënland
+    content: dfsdf
+  story2:
+    pos_x: 200
+    pos_y: 250
+    title: Épopée sur le grand Sjaneul
+    place: Groënland
+    content: dfsdf
+  story3:
+    pos_x: 100
+    pos_y: 350
+    title: Épopée sur le grand Sjaneul
+    place: Groënland
+    content: dfsdf
+  story4:
+    pos_x: 150
+    pos_y: 550
+    title: Épopée sur le grand Sjaneul
+    place: Groënland
+    content: dfsdf
+
+#  Journeys -------
+
+Journey:
+  j1:
+    title: Quelques très beaux coins d’Islande
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 1
+  j2:
+    title: Wilderness islandaise
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 1
+  j3:
+    title: Sur les crêtes des montagnes de Skaftafell, Islande
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 1
+  j4:
+    title: Trek aux confins du Schweizerland, Groenland de l'Est
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 1
+  j5:
+    title: Trek aux confins du Schweizerland, Groenland de l'Est
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 1
+  j6:
+    title: Raid à ski dans les montagnes du Sørlandet, Norvège du sud
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 3
+  j7:
+    title: Stage de snowkite dans le Skarvheimen / Hardanger, Norvège
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 3
+  j8:
+    title: Ski exploration dans le massif du Schweizerland, Groenland 
+    place: Islande
+    cover: http://latitudes-nord.fr/images/pics/mer_de_glace.jpg
+    file: /dumb/tres_beaux_coins_dislande.pdf
+    from_date: 2013-06-29
+    to_date: 2013-07-12
+    season: 3

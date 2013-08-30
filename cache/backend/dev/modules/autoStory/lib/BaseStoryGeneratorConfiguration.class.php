@@ -1,0 +1,268 @@
+<?php
+
+/**
+ * story module configuration.
+ *
+ * @package    ##PROJECT_NAME##
+ * @subpackage story
+ * @author     ##AUTHOR_NAME##
+ * @version    SVN: $Id: configuration.php 24171 2009-11-19 16:37:50Z Kris.Wallsmith $
+ */
+abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfiguration
+{
+  public function getActionsDefault()
+  {
+    return array();
+  }
+
+  public function getFormActions()
+  {
+    return array(  '_delete' => NULL,  '_list' => NULL,  '_save' => NULL,  '_save_and_add' => NULL,);
+  }
+
+  public function getNewActions()
+  {
+    return array();
+  }
+
+  public function getEditActions()
+  {
+    return array();
+  }
+
+  public function getListObjectActions()
+  {
+    return array(  '_edit' => NULL,  '_delete' => NULL,);
+  }
+
+  public function getListActions()
+  {
+    return array(  '_new' => NULL,);
+  }
+
+  public function getListBatchActions()
+  {
+    return array(  '_delete' => NULL,);
+  }
+
+  public function getListParams()
+  {
+    return '%%id%% - %%title%% - %%type%% - %%is_published%% - %%started_at%% - %%ended_at%% - %%cover%% - %%place%% - %%content%% - %%pos_x%% - %%pos_y%% - %%created_at%% - %%updated_at%% - %%slug%%';
+  }
+
+  public function getListLayout()
+  {
+    return 'tabular';
+  }
+
+  public function getListTitle()
+  {
+    return 'Story List';
+  }
+
+  public function getEditTitle()
+  {
+    return 'Edit Story';
+  }
+
+  public function getNewTitle()
+  {
+    return 'New Story';
+  }
+
+  public function getFilterDisplay()
+  {
+    return array();
+  }
+
+  public function getFormDisplay()
+  {
+    return array();
+  }
+
+  public function getEditDisplay()
+  {
+    return array();
+  }
+
+  public function getNewDisplay()
+  {
+    return array();
+  }
+
+  public function getListDisplay()
+  {
+    return array(  0 => 'id',  1 => 'title',  2 => 'type',  3 => 'is_published',  4 => 'started_at',  5 => 'ended_at',  6 => 'cover',  7 => 'place',  8 => 'content',  9 => 'pos_x',  10 => 'pos_y',  11 => 'created_at',  12 => 'updated_at',  13 => 'slug',);
+  }
+
+  public function getFieldsDefault()
+  {
+    return array(
+      'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'title' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'type' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'is_published' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
+      'started_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'ended_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'cover' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'place' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'content' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'pos_x' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'pos_y' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'slug' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+    );
+  }
+
+  public function getFieldsList()
+  {
+    return array(
+      'id' => array(),
+      'title' => array(),
+      'type' => array(),
+      'is_published' => array(),
+      'started_at' => array(),
+      'ended_at' => array(),
+      'cover' => array(),
+      'place' => array(),
+      'content' => array(),
+      'pos_x' => array(),
+      'pos_y' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'slug' => array(),
+    );
+  }
+
+  public function getFieldsFilter()
+  {
+    return array(
+      'id' => array(),
+      'title' => array(),
+      'type' => array(),
+      'is_published' => array(),
+      'started_at' => array(),
+      'ended_at' => array(),
+      'cover' => array(),
+      'place' => array(),
+      'content' => array(),
+      'pos_x' => array(),
+      'pos_y' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'slug' => array(),
+    );
+  }
+
+  public function getFieldsForm()
+  {
+    return array(
+      'id' => array(),
+      'title' => array(),
+      'type' => array(),
+      'is_published' => array(),
+      'started_at' => array(),
+      'ended_at' => array(),
+      'cover' => array(),
+      'place' => array(),
+      'content' => array(),
+      'pos_x' => array(),
+      'pos_y' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'slug' => array(),
+    );
+  }
+
+  public function getFieldsEdit()
+  {
+    return array(
+      'id' => array(),
+      'title' => array(),
+      'type' => array(),
+      'is_published' => array(),
+      'started_at' => array(),
+      'ended_at' => array(),
+      'cover' => array(),
+      'place' => array(),
+      'content' => array(),
+      'pos_x' => array(),
+      'pos_y' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'slug' => array(),
+    );
+  }
+
+  public function getFieldsNew()
+  {
+    return array(
+      'id' => array(),
+      'title' => array(),
+      'type' => array(),
+      'is_published' => array(),
+      'started_at' => array(),
+      'ended_at' => array(),
+      'cover' => array(),
+      'place' => array(),
+      'content' => array(),
+      'pos_x' => array(),
+      'pos_y' => array(),
+      'created_at' => array(),
+      'updated_at' => array(),
+      'slug' => array(),
+    );
+  }
+
+
+  /**
+   * Gets the form class name.
+   *
+   * @return string The form class name
+   */
+  public function getFormClass()
+  {
+    return 'StoryForm';
+  }
+
+  public function hasFilterForm()
+  {
+    return true;
+  }
+
+  /**
+   * Gets the filter form class name
+   *
+   * @return string The filter form class name associated with this generator
+   */
+  public function getFilterFormClass()
+  {
+    return 'StoryFormFilter';
+  }
+
+  public function getPagerClass()
+  {
+    return 'sfDoctrinePager';
+  }
+
+  public function getPagerMaxPerPage()
+  {
+    return 20;
+  }
+
+  public function getDefaultSort()
+  {
+    return array(null, null);
+  }
+
+  public function getTableMethod()
+  {
+    return '';
+  }
+
+  public function getTableCountMethod()
+  {
+    return '';
+  }
+}

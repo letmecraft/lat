@@ -1,0 +1,32 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# Services
+
+newsletter:
+  url: /newsletter
+  param: { module: default, action: newsletter }
+
+# Pages
+
+bio:
+  url:   /michael-charavin-guide-polaire
+  param: { module: default, action: bio }
+
+contact:
+  url:   /me-contacter
+  param: { module: default, action: contact }
+
+story_show:
+  url:      /carnets-et-photos/:slug
+  class:    sfDoctrineRoute
+  param:    { module: story, action: show }
+  options:  { model: Story, type: object }
+
+publication:
+  class:   sfDoctrineRouteCollection
+  options: { model: Publication }
+
+homepage:
+  url:   /
+  param: { module: default, action: index }

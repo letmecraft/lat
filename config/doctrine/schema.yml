@@ -1,0 +1,47 @@
+#  Stories -------
+
+Story:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      fields: [title]
+  columns:
+    title:          { type: string(255), notnull: true }
+    type:           { type: int(1), notnull: true, default: 0 }
+    is_published:   { type: boolean, notnull: true, default: 0 }
+    started_at:     { type: timestamp, notnull: true }
+    ended_at:       { type: timestamp, notnull: true }
+    cover:          { type: string(255), notnull: true }
+    place:          { type: string(255), notnull: true }
+    content:        { type: string(), notnull: true }
+    #localisation of the story on homepage map
+    pos_x:          { type: int(5), notnull: true, default: 0 }
+    pos_y:          { type: int(5), notnull: true, default: 0 }
+
+#  Journeys -------
+
+Journey:
+  columns:
+    title:          { type: string(255), notnull: true }
+    place:          { type: string(255), notnull: true }
+    file:           { type: string(255), notnull: true }
+    cover:          { type: string(255), notnull: true }
+    from_date:      { type: timestamp, notnull: true }
+    to_date:        { type: timestamp, notnull: true }
+    season:         { type: int(1), notnull: true, default: 1 }
+
+#  Publication -------
+
+Publication:
+  actAs:
+    Sluggable:
+      fields: [title]
+      unique: true
+      canUpdate: true
+    Timestampable: ~
+  columns:
+    title:          { type: string(255), notnull: true }
+    type:           { type: int(1), notnull: true, default: 0 }
+    cover:          { type: string(255), notnull: true }
+    description:    { type: string(255), notnull: true }
+    published_at:   { type: timestamp, notnull: true }
