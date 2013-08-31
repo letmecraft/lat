@@ -14,8 +14,11 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
-      filter:  ~
+      list:
+        title: Carnets d'expéditions et photographies
+        display: [=title]
+      filter:
+        class: false
       form:    ~
       edit:    ~
       new:     ~

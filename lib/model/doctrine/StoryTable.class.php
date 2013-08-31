@@ -16,4 +16,11 @@ class StoryTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Story');
     }
+
+    public function getPublished()
+    {
+        return $this->createQuery()
+            ->where('is_published = ?', true)
+            ->execute();
+    }
 }

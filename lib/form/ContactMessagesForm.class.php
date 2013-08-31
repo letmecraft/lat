@@ -16,11 +16,13 @@ class ContactMessagesForm extends sfForm
         $this->widgetSchema->setNameFormat('contact[%s]');
 
         /* Set widgets */
-        $this->widgetSchema['sender_email'] = new sfWidgetFormInput(array(), array("value" => "Votre adresse email", "data-value" => "Votre adresse email"));
-        $this->widgetSchema['subject'] = new sfWidgetFormInput(array(), array("value" => "Sujet", "data-value" => "Sujet"));
-        $this->widgetSchema['message'] = new sfWidgetFormTextarea(array("default" => "Votre message"), array("data-value" => "Votre message"));
+        $this->widgetSchema['sender_name'] = new sfWidgetFormInput();
+        $this->widgetSchema['sender_email'] = new sfWidgetFormInput();
+        $this->widgetSchema['subject'] = new sfWidgetFormInput();
+        $this->widgetSchema['message'] = new sfWidgetFormTextarea();
 
         /* Set validators */
+        $this->validatorSchema['sender_name'] = new sfValidatorString();
         $this->validatorSchema['sender_email'] = new sfValidatorEmail(array(), array('required' => 'Champs requis', 'invalid' => 'Email non valide'));
         $this->validatorSchema['subject'] = new sfValidatorString();
         $this->validatorSchema['message'] = new sfValidatorString();

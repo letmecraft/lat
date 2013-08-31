@@ -17,7 +17,7 @@ class defaultActions extends sfActions
     */
     public function executeIndex(sfWebRequest $request)
     {
-        $this->stories = Doctrine_Core::getTable('Story')->findAll();
+        $this->stories = Doctrine_Core::getTable('Story')->getPublished();
     }
 
     /**
@@ -47,7 +47,7 @@ class defaultActions extends sfActions
               
               ->setFrom($this->form->getValue('sender_email'))
               ->setTo(sfConfig::get('app_emailing_contacts'))
-              ->setSubject('[depuis latitudes-nord.fr] '.$this->form->getValue('subject'))
+              ->setSubject('[depuis ln.fr] '.$this->form->getValue('subject'))
               ->setBody($this->form->getValue('message'));
 
               try {
@@ -55,7 +55,7 @@ class defaultActions extends sfActions
                 $this->getUser()->setFlash('notice', 'Votre message a bien été envoyé. Merci !');
 
                 if(!$nbMsgSent) {
-                    $this->getMailer()->composeAndSend("contact@ecoledesparents.org", "thomas.pob@gmail.com", "Rapports d'envois", $failures);
+                    $this->getMailer()->composeAndSend("thomas.pob@gmail.com", "Rapports d'envois", $failures);
                 }
 
               } catch (Exception $e) {

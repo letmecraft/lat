@@ -1,29 +1,23 @@
-<?php slot('bodyId', 'bio') ?>
+<?php slot('bodyClass', 'bio') ?>
 <?php slot('pageTitle', 'Biographie') ?>
-<?php slot('controls', true) ?>
 
 <div id="content">
 
     <section id="content-header">
+        <h1 class="h2">Michael Charavin, guide spécialiste des régions polaires</h1>
     </section>
 
     <section id="frame">
         <ul class="slidee">
 
             <li class="type-text">
-                <h1 class="h2">Michael Charavin, guide spécialiste des régions polaires</h1>
-                <p><img src="/images/mc-portrait.png" alt="Michael Charavin"/></p>
-                <ul class="simple">
-                    <li><h2>Né en 1970</h2></li>
-                    <li><h2>Accompagnateur en montagne</h2></li>
-                    <li><h2>Moniteur Snowkite</h2></li>
-                    <li><h2>Moniteur VTT</h2></li>
-                </ul>
-                
-                <h2 class="h3">De 2000 à 2011</h2>
-                <p>Plus de 1100 jours consacrés aux raids itinérants et expéditions en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</p>
+                <p><img class="portrait" src="/images/mc-portrait.png" alt="Michael Charavin"/></p>
 
-                <p><a target="_blank" href="/content/dumb/bio/michael_charavin_biographie.pdf" class="h3">&#10141; Biographie</a></p>
+                <blockquote>Accompagnateur en montagne, Moniteur Snowkite et VTT</blockquote>
+
+                <blockquote>De 2000 à 2010, plus de 1100 jours consacrés aux raids itinérants et expéditions en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</blockquote>
+
+                <p><a target="_blank" href="/content/dumb/bio/michael_charavin_biographie.pdf" class="h3 full-bio">&#10141; Biographie complète</a></p>
             </li>
             
 

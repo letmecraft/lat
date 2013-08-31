@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-    setFrameHeight();
+    //setFrameHeight();
     setImageRatio();
 
-    /* 2 Text input switching */
+    /* 2 Text input switching
 
     $("input[type='text'], textarea").focus(function(e){
         if($(this).val() == $(this).attr("data-value")) $(this).val('');
     }).blur(function(e){
         if($(this).val() == '') $(this).val($(this).attr("data-value"));
-    });
+    }); */
 
     /* 2 Newsletter */
 
@@ -52,7 +52,7 @@ $(document).ready(function() {
     /* 1 Slider */
 
     $(window).resize(function(e) {
-        setFrameHeight();
+        //setFrameHeight();
         setImageRatio();
         sly.reload();
     })
@@ -125,7 +125,7 @@ $(document).ready(function() {
                 $("#frame").fadeOut(150, function() {
 
                     if(filter == "all") {
-                        $(".slidee").html($("li", story.clone()));
+                        $(".slidee").html($("> li", story.clone()));
                     } else {
                         $(".slidee").html($("li.type-" + filter + ", li.type-empty", story.clone()));
                     }

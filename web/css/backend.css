@@ -1,17 +1,468 @@
-/* 
-    Document   : admin
-    Created on : 20 sept. 2012, 23:45:59
-    Author     : tam
-    Description:
-        Purpose of the stylesheet follows.
-*/
+/* -----------------------------------------------------------------------------
+    Summary
+----------------------------------------------------------------------------- */
 
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
+/* -----------------------------------------------------------------------------
+    Reset (http://meyerweb.com/eric/tools/css/reset)
+----------------------------------------------------------------------------- */
 
-root { 
-    display: block;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------------------------------------------------------
+    Global
+----------------------------------------------------------------------------- */
+
+/* 5.1  Headers */
+
+h1, h2, h3
+{
+    line-height: normal;
+}
+
+h1 {
+    font-size: 21px;
+    font-family: "TitilliumText22LRegular";
+    color: #658686;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+
+/* 5.2  Links and buttons */
+
+a, a:link, a:visited {text-decoration: none; color: #333;}
+a:hover, a:focus, a:active {color: #333;  text-decoration: underline;}
+
+a:active {
+    position: relative;
+    top: 3px;
+}
+
+/* 5.4  Form */
+
+
+
+form li {
+    margin-bottom: 20px;
+}
+
+form li:last-child {
+    margin-bottom: 15px;
+}
+
+#sf_admin_container input[type="text"], #sf_admin_container input[type="password"],
+input[type="text"], input[type="password"]{
+    font-family: 'MetaPro', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border: solid 1px #cacaca;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    width: 320px;
+    padding: 5px 5px 5px 5px;
+}
+
+#sf_admin_container textarea {
+    font-family: 'MetaPro', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: solid 1px #cacaca;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    width: 320px;
+    padding: 5px 5px 5px 5px;
+    height: 200px;
+}
+
+#sf_admin_container select {
+    width: auto;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+input[type="submit"], .bouton {
+    font-family: 'MetaPro', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #E6E6E6;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+    background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    padding: 5px 14px 6px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    color: #333;
+    font-size: 13px;
+    line-height: normal;
+    border: 1px solid #CCC;
+    border-bottom-color: #BBB;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+}
+
+input[type="submit"]:hover, .boutons:hover {
+  background-position: 0 -6px;
+  color: #333;
+  text-decoration: none;
+}
+
+input[type="submit"]:focus, .bouton:hover {
+  outline: 1px dotted #666;
+}
+
+input[type="submit"]:active, .bouton:hover {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.error_list {
+    color: #ed4531;
+}
+
+/* 5.3  Flash messages */
+
+/* 5.3  Text elements */
+
+.big {
+    font-size: 2em;
+}
+
+p, ul, form {
+  margin-bottom: 1.8em;
+}
+
+* > p:last-child, * > ul:last-child, * > form:last-child {
+   margin-bottom: 0px;
+}
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+/* 5.4  List */
+
+/* 5.5  Table */
+
+/* -----------------------------------------------------------------------------
+    Main elements : HTML & Body
+----------------------------------------------------------------------------- */
+
+body {
+    width: 940px;
+    font: normal 0.6em/1em, Helvetica, Arial, Garuda, sans-serif;
+    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans,sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    background: #efefef;
+}
+
+/* -----------------------------------------------------------------------------
+    Main elements : Header
+----------------------------------------------------------------------------- */
+
+header {
+}
+
+/* -----------------------------------------------------------------------------
+    Main elements : Content
+----------------------------------------------------------------------------- */
+
+#sf_admin_container {
+    background: #fff;
+    padding: 25px;
+    -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+/* -----------------------------------------------------------------------------
+    Main elements : Footer
+----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+    Admin Generator Theme by Letmecraft.com
+----------------------------------------------------------------------------- */
+
+#sf_admin_container {
+
+}
+
+#sf_admin_container ul.sf_admin_actions {
+    margin-bottom: 0;
+}
+
+#sf_admin_container .sf_admin_form_row {
+    border: none;
+}
+
+.sf_admin_actions {
+    background: #dedede;
+    padding: 13px 20px 10px 20px;
+    text-shadow: 1px 1px #fff;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-radius-bottom-left: 5px;
+}
+
+#sf_admin_container fieldset {
+    border: none;
+    padding: 10px;
+}
+
+.sf_admin_list {
+    padding: 0 20px;
+    margin: 20px 0 20px 0;
+}
+
+.sf_admin_list table {
+    width: 100%;
+}
+
+#sf_admin_container .sf_admin_list thead,
+#sf_admin_container .sf_admin_list tbody,
+#sf_admin_container .sf_admin_list tfoot {
+    padding: 0 20px;
+}
+
+#sf_admin_container .sf_admin_list th,
+#sf_admin_container .sf_admin_list th a {
+    background: none;
+    border-bottom: none;
+    font-weight: bold;
+    border-top: none;
+}
+
+#sf_admin_container .sf_admin_list tfoot th,
+#sf_admin_container .sf_admin_list tfoot th a {
+    border-top: 1px solid #dedede;
+}
+
+#sf_admin_container .sf_admin_list tr td,
+#sf_admin_container .sf_admin_list tr th {
+    padding: 8px 15px;
+    border-bottom: none;
+    vertical-align: middle;
+}
+
+.sf_admin_list_td_image img {
+   max-height: 180px;
+}
+
+#sf_admin_container ul li.sf_admin_action_edit a { background-image: url("../images/icons/edit.png"); }
+#sf_admin_container ul li.sf_admin_action_delete a { background-image: url("../images/icons/delete.png"); }
+#sf_admin_container ul li.sf_admin_action_new a { background-image: url("../images/icons/new.png"); }
+#sf_admin_container ul li.sf_admin_action_list a { background-image: url("../images/icons/list.png"); }
+
+#sf_admin_container .error {
+    background: none;
+    border: none;
+    color: #c22e2e;
+    padding: 0;
+}
+
+#sf_admin_container fieldset h2, h2 {
+    background: #ededed;
+    width: 438px;
+    padding: 8px 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.sf_admin_form .content img {
+    height: 100px;
+    display: block;
+    margin-bottom: 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#magazine_issue_published_at_day {
+    display: none;
+}
+
+#magazine_issue_published_at_month {
+display: none;
+}
+
+.sf_admin_list iframe {
+    margin-top: 8px;
+}
+
+.sf_admin_form .content img.ui-datepicker-trigger {
+    width: 16px;
+    height: 16px;
+    background: #dedede;
+    padding: 5px;
+    display: inline;
+    margin: 0 8px 0 10px;
+    position: relative;
+    top: 8px;
+}
+
+.sf_admin_form .sf_admin_date .content {
+    position: relative;
+    bottom: 10px;
+}
+
+.ui-widget-header {
+    background: #ededed;
+    border: none;
+    color: #4c4c4c;
+}
+
+#sf_admin_container th
+{
+}
+
+#sf_admin_container td, #sf_admin_container th {
+
+}
+
+#sf_admin_container .sf_admin_list tr td, #sf_admin_container .sf_admin_list tr th {
+    border: none;
+    border-bottom: 1px #eaeaea solid;
+}
+
+#sf_admin_container .sf_admin_list tfoot th a {
+    border-top: none;
+}
+
+.sf_admin_row img {
+    max-width: 80px;
+}
+
+#sf_admin_container .sf_admin_form_field_User th {
+    display: none;
+}
+
+.basket_status_1,
+.basket_status_2,
+.basket_status_3 {
+     font-weight: bold;
+}
+
+.basket_status_1 { color: #D6963A; }
+.basket_status_2 { color: #939598; }
+.basket_status_3 { color: #754E4E; }
+
+#sf_admin_view {
+    padding: 10px 20px 10px 25px;
+}
+
+#sf_admin_view .insertion {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+}
+
+#sf_admin_view .insertion .label {
+    color: #aaa;
+    width: 135px;
+    display: inline-block;
+}
+
+#sf_admin_view h2 {
+    margin-bottom: 10px;
+}
+
+#sf_admin_view p {
+    margin-bottom: 35px;
+}
+
+#sf_admin_container ul.sf_admin_actions li a.invoice_download {
+    background: url("../images/icons/doc.png") no-repeat 0 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#sf_admin_container ul.sf_admin_actions li a.accept {
+    background: url("../images/icons/tick.png") no-repeat;
+}
+
+#sf_admin_container ul.sf_admin_actions li a.reject {
+    background: url("../images/icons/delete.png") no-repeat;
+}
+
+#sf_admin_container ul.sf_admin_actions li a.list {
+    background: url("../images/icons/list.png") no-repeat;
+}
+
+#sf_admin_container ul.sf_admin_actions li {
+    margin-right: 20px;
+}

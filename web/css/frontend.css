@@ -41,6 +41,7 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
+        text-align: left;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -119,44 +120,42 @@ a:active {
 
 /* Form */
 
-#main form p {
-    margin-bottom: 25px;
+#content form p {
+    margin-bottom: 15px;
 }
 
-#main input,
-#main textarea,
-#main select
+#content input,
+#content textarea,
+#content select
 {
     background: #e7eded;
     border: none;
-    padding: 14px 10px 9px 10px;
-    font-size: 1.3em;
-    font-family: georgia;
-    font-style: italic;
-    width: 238px;
-    color: #888;
+    padding: 12px 10px 9px 10px;
+    font-size: 13px;
+    width: 100%;
 }
 
-#main textarea {
+#content textarea {
     height: 130px;
+    width: 100%;
 }
 
-#main select {
+#content select {
     -webkit-appearance: none;
     width: 250px;
     border-radius: 0;
 }
 
-#main form label {
-    font-family: Georgia, serif;
-    font-style: italic;
+#content form label {
+    color: #969696;
     display: block;
-    margin-bottom: 0.3em;
-    color: #767676;
-    font-size: 1.4em;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 22px;
 }
 
-#main input.submit {
+#content input.submit {
     width: 135px;
     font-family: "TitilliumText22LLight";
     background: #757575;
@@ -192,8 +191,8 @@ a:active {
     color: #969696;
     font-style: italic;
     font-family: Georgia, serif;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 #content blockquote:before { content: '“' }
@@ -304,7 +303,7 @@ header .headline img {
 /* Frame */
 
 #frame {
-    height: 600px;
+    height: 618px;
     min-height: 289px;
 }
 
@@ -314,15 +313,19 @@ header .headline img {
 
 /* Bloc types */
 
+.slidee > li {
+    float: left;
+    margin-right: 35px;
+}
+
 li.type-empty {
-    width: 75px;
+    width: 69px;
+    height: 100%;
 }
 
 li.type-image {
     height: 100%;
-    width: 590px;
-    float: left;
-    margin-right: 30px;
+    width: 560px;
 }
 
 li.type-image img {
@@ -331,12 +334,12 @@ li.type-image img {
 }
 
 li.type-text {
-    float: left;
     color: #000000;
-    font-size: 0.85em;
-    width: 260px;
-    line-height: 1.3em;
-    margin-right: 40px;
+    font-size: 13px;
+    text-align: justify;
+    width: 280px;
+    line-height: 16px;
+    margin-right: 35px;
     padding-top: 8px;
     -webkit-transition: all ease 250ms;
 }
@@ -344,6 +347,7 @@ li.type-text {
 li.type-text.insert {
     padding: 18px 15px 15px 15px;
     background: #f2f2f2;
+    width: 250px;
 }
 
 /* Controls */
@@ -434,40 +438,27 @@ footer .colophon a:hover { background:none; color:#9e9e9e; text-decoration:under
     Specific page : Bio
 ----------------------------------------------------------------------------- */
 
-#bio .bio.type-text {
-    width: 220px;
+body.bio .portrait {
+    width: 100%;
 }
 
-#bio .bio img {
-    border: solid 1px #d9d9d9;
-    margin-bottom: -6px;
-    height: 230px;
+body.bio #content .h3.full-bio {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: block;
 }
 
-#bio .intro {
-    font-size: 1.3em;
-    font-family: georgia;
-    font-style: italic;
-    line-height: 1.3em;
-    color: #888;
-}
-
-#bio .bio .h2 {
-    margin-bottom: 5px;
-}
-
-#bio ul.simple {
-    margin-bottom: 11px;
-}
-
-#bio ul.simple li {
-    font-size: 0.8em;
-    margin-bottom: 5px;
+body.bio #content .h3.full-bio:hover {
+    color: #658686;
 }
 
 /* -----------------------------------------------------------------------------
     Specific page : Contact
 ----------------------------------------------------------------------------- */
+
+body.contact #content blockquote {
+    margin-bottom: 26px;
+}
 
 #contact table {
     margin-top: 20px;
@@ -677,6 +668,7 @@ body.story .cover .stamp span.separator.top { top: 10px; }
     MQueries
 ----------------------------------------------------------------------------- */
 
+/*
 @media screen and (max-height: 885px) {
     #frame li.type-text {
         width: 320px;
@@ -688,8 +680,7 @@ body.story .cover .stamp span.separator.top { top: 10px; }
         width: 520px;
     }
 }
-
-/* @media screen and (min-height: 800px) {
+ @media screen and (min-height: 800px) {
     #frame li.type-image {
         height: 505px;
         width: 898px;

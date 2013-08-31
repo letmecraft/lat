@@ -1,10 +1,11 @@
-<?php slot('bodyId', 'contact') ?>
+<?php slot('bodyClass', 'contact') ?>
 <?php slot('pageTitle', 'Voyage en partance') ?>
 <?php setlocale(LC_TIME, "fr_FR"); ?>
 
 <div id="content">
 
     <section id="content-header">
+        <h1 class="h2">Contact</h1>
     </section>
 
     <section id="frame">
@@ -38,41 +39,50 @@
         Un co-encadrement et/ou des petits groupes. Votre voyage révé n'est pas ci-dessus. Parlons en !</p>
     </article>-->
 
+
+    <li class="type-image"><img class="test" src="/ups/images/story/10/P1100745.jpg" alt="#" /></li>
          <li class="type-text">
 
-        <h2 class="h2">Contact</h2>
+              <blockquote>Michael Charavin, La Touisse, 05380 Chateauroux-les-Alpes, Fr<br />
+              michael.charavin[at]gmail.com<br />+33 (0)6 13 93 72 95</blockquote>
+            
+        </blockquote>
+
+              <h2 class="h3">Message</h2>
+
         <form method="post" action="<?php url_for("@contact") ?>">
 
-            <?php echo $sf_user->getFlash('notice') ?>
             <?php echo $sf_user->getFlash('error') ?>
             <?php echo $form->renderHiddenFields() ?>
 
             <p>
-                <?php echo $form['sender_email']->getError() ?>
+                <label>Votre nom</label>
+                <?php echo $form['sender_name']->render() ?>
+            </p>
+
+            <p>
+                <label>Votre email</label>
                 <?php echo $form['sender_email']->render() ?>
             </p>
+            
             <p>
-                <?php echo $form['subject']->getError() ?>
+                <label>Le sujet</label>
                 <?php echo $form['subject']->render() ?>
             </p>
             <p>
-                <?php echo $form['message']->getError() ?>
+                <label>Votre message</label>
                 <?php echo $form['message']->render() ?>
             </p>
             <p class="action"><input type="submit" class="submit" value="Envoyer" /></p>
         </form>
     </li>
-
-    <li class="type-text">
-        <h2 class="h3">Coordonnées</h2>
-        
-        <ul class="simple">
-            <li>Michael Charavin<br />La Touisse<br />05380 Chateauroux-les-Alpes, France</li>
-            <li>michael.charavin[at]gmail.com</li>
-            <li>+33 (0)6 13 93 72 95</li>
-            <li>Skype : michael.charavin</li>
-            <li><a href="https://www.facebook.com/michaelcharavin">Facebook</a></li>
-        </ul>
-    </li>
     </ul>
+</section>
+
+
+<section id="controls">
+        <div id="scrollbar">
+            <div class="handle"></div>
+        </div>
+    </section>
 </div>
