@@ -11,31 +11,34 @@
  * @property timestamp $started_at
  * @property timestamp $ended_at
  * @property string $cover
- * @property string $place
  * @property string $content
+ * @property integer $story_place_id
  * @property int $pos_x
  * @property int $pos_y
+ * @property StoryPlace $StoryPlace
  * 
- * @method string    getTitle()        Returns the current record's "title" value
- * @method int       getType()         Returns the current record's "type" value
- * @method boolean   getIsPublished()  Returns the current record's "is_published" value
- * @method timestamp getStartedAt()    Returns the current record's "started_at" value
- * @method timestamp getEndedAt()      Returns the current record's "ended_at" value
- * @method string    getCover()        Returns the current record's "cover" value
- * @method string    getPlace()        Returns the current record's "place" value
- * @method string    getContent()      Returns the current record's "content" value
- * @method int       getPosX()         Returns the current record's "pos_x" value
- * @method int       getPosY()         Returns the current record's "pos_y" value
- * @method Story     setTitle()        Sets the current record's "title" value
- * @method Story     setType()         Sets the current record's "type" value
- * @method Story     setIsPublished()  Sets the current record's "is_published" value
- * @method Story     setStartedAt()    Sets the current record's "started_at" value
- * @method Story     setEndedAt()      Sets the current record's "ended_at" value
- * @method Story     setCover()        Sets the current record's "cover" value
- * @method Story     setPlace()        Sets the current record's "place" value
- * @method Story     setContent()      Sets the current record's "content" value
- * @method Story     setPosX()         Sets the current record's "pos_x" value
- * @method Story     setPosY()         Sets the current record's "pos_y" value
+ * @method string     getTitle()          Returns the current record's "title" value
+ * @method int        getType()           Returns the current record's "type" value
+ * @method boolean    getIsPublished()    Returns the current record's "is_published" value
+ * @method timestamp  getStartedAt()      Returns the current record's "started_at" value
+ * @method timestamp  getEndedAt()        Returns the current record's "ended_at" value
+ * @method string     getCover()          Returns the current record's "cover" value
+ * @method string     getContent()        Returns the current record's "content" value
+ * @method integer    getStoryPlaceId()   Returns the current record's "story_place_id" value
+ * @method int        getPosX()           Returns the current record's "pos_x" value
+ * @method int        getPosY()           Returns the current record's "pos_y" value
+ * @method StoryPlace getStoryPlace()     Returns the current record's "StoryPlace" value
+ * @method Story      setTitle()          Sets the current record's "title" value
+ * @method Story      setType()           Sets the current record's "type" value
+ * @method Story      setIsPublished()    Sets the current record's "is_published" value
+ * @method Story      setStartedAt()      Sets the current record's "started_at" value
+ * @method Story      setEndedAt()        Sets the current record's "ended_at" value
+ * @method Story      setCover()          Sets the current record's "cover" value
+ * @method Story      setContent()        Sets the current record's "content" value
+ * @method Story      setStoryPlaceId()   Sets the current record's "story_place_id" value
+ * @method Story      setPosX()           Sets the current record's "pos_x" value
+ * @method Story      setPosY()           Sets the current record's "pos_y" value
+ * @method Story      setStoryPlace()     Sets the current record's "StoryPlace" value
  * 
  * @package    lat
  * @subpackage model
@@ -76,15 +79,13 @@ abstract class BaseStory extends sfDoctrineRecord
              'notnull' => true,
              'length' => 255,
              ));
-        $this->hasColumn('place', 'string', 255, array(
-             'type' => 'string',
-             'notnull' => true,
-             'length' => 255,
-             ));
         $this->hasColumn('content', 'string', null, array(
              'type' => 'string',
              'notnull' => true,
              'length' => '',
+             ));
+        $this->hasColumn('story_place_id', 'integer', null, array(
+             'type' => 'integer',
              ));
         $this->hasColumn('pos_x', 'int', 5, array(
              'type' => 'int',
@@ -103,6 +104,10 @@ abstract class BaseStory extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('StoryPlace', array(
+             'local' => 'story_place_id',
+             'foreign' => 'id'));
+
         $timestampable0 = new Doctrine_Template_Timestampable();
         $sluggable0 = new Doctrine_Template_Sluggable(array(
              'fields' => 

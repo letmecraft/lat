@@ -13,10 +13,29 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
+      fields:
+        title:
+          label: Titre
+        is_published:
+          label: Est publiée ?
+        started_at:
+          label: Date de début
+        ended_at:
+          label: Date de fin
+        cover:
+          label: Couverture
+        content:
+          label:  Contenus
+        story_place_id:
+          label: Lieu
       list:
         title: Carnets d'expéditions et photographies
         display: [=title]
+        object_actions:
+          _edit:
+            label: Modifier
+          _delete:
+            label: Supprimer
       filter:
         class: false
       form:    ~

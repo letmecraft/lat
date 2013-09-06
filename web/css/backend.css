@@ -98,16 +98,26 @@ form li:last-child {
     margin-bottom: 15px;
 }
 
+form label {
+    font-size: 13px;
+    float: left;
+    width: 120px;
+    position: relative;
+    top: 2px;
+}
+
 #sf_admin_container input[type="text"], #sf_admin_container input[type="password"],
 input[type="text"], input[type="password"]{
     font-family: 'MetaPro', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     border: solid 1px #cacaca;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
     width: 320px;
     padding: 5px 5px 5px 5px;
+    position: relative;
+    bottom: 6px;
 }
 
 #sf_admin_container textarea {
@@ -251,6 +261,44 @@ header {
 ----------------------------------------------------------------------------- */
 
 /* -----------------------------------------------------------------------------
+    Specific elements
+----------------------------------------------------------------------------- */
+
+#sf_admin_container .sf_admin_form_field_content textarea  {
+    width: 860px;
+    height: 320px;
+    margin-top: 10px;
+}
+
+#sf_admin_container .story_map_position label {
+    float: none;
+    margin-left: 10px;
+}
+
+#sf_admin_container .sf_admin_form_row.story_map_position .content {
+    width: 861px;
+    height: 517px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#sf_admin_container .story_map_position .map {
+    width: 861px;
+    height: 517px;
+    margin-left: 0px;
+}
+
+#sf_admin_container .story_map_position .pin {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border: none;
+}
+
+/* -----------------------------------------------------------------------------
     Admin Generator Theme by Letmecraft.com
 ----------------------------------------------------------------------------- */
 
@@ -264,6 +312,7 @@ header {
 
 #sf_admin_container .sf_admin_form_row {
     border: none;
+    margin-bottom: 20px;
 }
 
 .sf_admin_actions {
@@ -346,10 +395,9 @@ header {
 .sf_admin_form .content img {
     height: 100px;
     display: block;
-    margin-bottom: 15px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    border: 1px #dedede solid;
+    margin-top: 8px;
+    margin-left: 123px;
 }
 
 #magazine_issue_published_at_day {
@@ -373,11 +421,6 @@ display: none;
     margin: 0 8px 0 10px;
     position: relative;
     top: 8px;
-}
-
-.sf_admin_form .sf_admin_date .content {
-    position: relative;
-    bottom: 10px;
 }
 
 .ui-widget-header {
@@ -434,7 +477,7 @@ display: none;
 #sf_admin_view .insertion .label {
     color: #aaa;
     width: 135px;
-    display: inline-block;
+    float: left;
 }
 
 #sf_admin_view h2 {

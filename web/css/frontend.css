@@ -228,7 +228,7 @@ a:active {
     margin-left: 15px;
 }
 
-#content li {
+#content .slidee li > li {
     margin-bottom: 5px;
 }
 
@@ -246,6 +246,7 @@ body{
     min-width: 960px;
     height: 100%;
     overflow: hidden;
+    background: url("../imageS/bg.jpg");
 }
 
 /* -----------------------------------------------------------------------------
@@ -303,12 +304,15 @@ header .headline img {
 /* Frame */
 
 #frame {
-    height: 618px;
+    height: 65vh;
     min-height: 289px;
+    -webkit-transition: 150ms ease all;
 }
 
 .slidee {
+    height: 100%;
     margin-left: 70px;
+    
 }
 
 /* Bloc types */
@@ -325,23 +329,23 @@ li.type-empty {
 
 li.type-image {
     height: 100%;
-    width: 560px;
 }
 
 li.type-image img {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 li.type-text {
     color: #000000;
     font-size: 13px;
     text-align: justify;
-    width: 280px;
+    width: 50vh;
     line-height: 16px;
     margin-right: 35px;
     padding-top: 8px;
-    -webkit-transition: all ease 250ms;
+    -webkit-column-count: 2;
+    overflow: hidden;
 }
 
 li.type-text.insert {
@@ -457,6 +461,10 @@ body.bio #content .h3.full-bio:hover {
 ----------------------------------------------------------------------------- */
 
 body.contact #content blockquote {
+    margin-bottom: 26px;
+}
+
+body.contact #content {
     margin-bottom: 26px;
 }
 
@@ -668,41 +676,17 @@ body.story .cover .stamp span.separator.top { top: 10px; }
     MQueries
 ----------------------------------------------------------------------------- */
 
-/*
-@media screen and (max-height: 885px) {
-    #frame li.type-text {
-        width: 320px;
+@media screen and (max-height: 900px) {
+    #frame {
+        height: 54vh;
     }
 }
 
-@media screen and (max-height: 790px) {
-    #frame li.type-text {
-        width: 520px;
+@media screen and (max-height: 780px) {
+    #frame {
+        height: 51vh;
     }
 }
- @media screen and (min-height: 800px) {
-    #frame li.type-image {
-        height: 505px;
-        width: 898px;
-    }
-
-    #frame li.type-image img {
-        height: 505px;
-        width: 898px;
-    }
-}
-
-@media screen and (min-height: 920px) {
-    #frame li.type-image {
-        height: 630px;
-        width: 1120px;
-    }
-
-    #frame li.type-image img {
-        height: 630px;
-        width: 1120px;
-    }
-}*/
 
 /* -----------------------------------------------------------------------------
     Firefox specific styles

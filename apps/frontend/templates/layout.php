@@ -42,10 +42,9 @@
         <!-- JS -->
 
         <script>var uriNewsletter = "<?php echo url_for("@newsletter") ?>";</script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/vendors/jquery-2.0.1.min.js"><\/script>')</script>
+        <script src="/vendors/jquery-2.0.3.min.js"></script>
         <script src="/vendors/sly-1.0.2.min.js"></script>
-        <script src="/js/app.js"></script>
+        <script src="/js/frontend.js"></script>
 
         <!-- GAnalytics -->
         <script>

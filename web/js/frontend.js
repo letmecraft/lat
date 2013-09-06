@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
 
     //setFrameHeight();
     setImageRatio();
@@ -54,7 +55,7 @@ $(document).ready(function() {
     $(window).resize(function(e) {
         //setFrameHeight();
         setImageRatio();
-        sly.reload();
+        //sly.reload();
     })
 
     function setImageRatio(e) {

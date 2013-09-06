@@ -16,7 +16,7 @@ class Story extends BaseStory
     const TYPE_EXPE = 1;
 
     static $types = array(
-        self::TYPE_PHOTO => 'Photographies',
-        self::TYPE_EXPE => 'Carnets',
+        self::TYPE_PHOTO => 'Photographie',
+        self::TYPE_EXPE => 'Carnet',
     );
 }

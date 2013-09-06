@@ -36,8 +36,8 @@
         <?php include_partial('default/footer') ?>
 
         <!-- JS -->
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/vendors/jquery-2.0.1.min.js"><\/script>')</script>
+        <script src="/js/backend.js"></script>
     </body>
 </html>

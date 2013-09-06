@@ -19,15 +19,7 @@
     <section id="frame">
         <ul class="slidee">
 
-            <li class="type-image cover">
-                <div class="stamp">
-                    <span class="separator top">_</span>
-                    <span class="date"><br />Du <?php echo strftime('%d %B', strtotime($story->started_at)) ?> au <?php echo strftime('%d %B %G', strtotime($story->ended_at)) ?></span><br />
-                    <span class="title"><?php echo $story->title ?><br /></span><br />
-                    <span class="separator bottom">_</span>
-                </div>
-                <img src="<?php echo $story->cover ?>" alt="" />
-            </li>
+            
 
             <?php echo $story->getRawValue()->getContent() ?>
             

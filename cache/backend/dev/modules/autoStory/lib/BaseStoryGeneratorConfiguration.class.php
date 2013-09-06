@@ -32,7 +32,7 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
 
   public function getListObjectActions()
   {
-    return array(  '_edit' => NULL,  '_delete' => NULL,);
+    return array(  '_edit' =>   array(    'label' => 'Modifier',  ),  '_delete' =>   array(    'label' => 'Supprimer',  ),);
   }
 
   public function getListActions()
@@ -99,14 +99,14 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
   {
     return array(
       'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'title' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'title' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Titre',),
       'type' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'is_published' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',),
-      'started_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
-      'ended_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
-      'cover' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'place' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'content' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'is_published' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Est publiée ?',),
+      'started_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Date de début',),
+      'ended_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Date de fin',),
+      'cover' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Couverture',),
+      'content' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Contenus',),
+      'story_place_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',  'label' => 'Lieu',),
       'pos_x' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'pos_y' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
@@ -125,8 +125,8 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
       'started_at' => array(),
       'ended_at' => array(),
       'cover' => array(),
-      'place' => array(),
       'content' => array(),
+      'story_place_id' => array(),
       'pos_x' => array(),
       'pos_y' => array(),
       'created_at' => array(),
@@ -145,8 +145,8 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
       'started_at' => array(),
       'ended_at' => array(),
       'cover' => array(),
-      'place' => array(),
       'content' => array(),
+      'story_place_id' => array(),
       'pos_x' => array(),
       'pos_y' => array(),
       'created_at' => array(),
@@ -165,8 +165,8 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
       'started_at' => array(),
       'ended_at' => array(),
       'cover' => array(),
-      'place' => array(),
       'content' => array(),
+      'story_place_id' => array(),
       'pos_x' => array(),
       'pos_y' => array(),
       'created_at' => array(),
@@ -185,8 +185,8 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
       'started_at' => array(),
       'ended_at' => array(),
       'cover' => array(),
-      'place' => array(),
       'content' => array(),
+      'story_place_id' => array(),
       'pos_x' => array(),
       'pos_y' => array(),
       'created_at' => array(),
@@ -205,8 +205,8 @@ abstract class BaseStoryGeneratorConfiguration extends sfModelGeneratorConfigura
       'started_at' => array(),
       'ended_at' => array(),
       'cover' => array(),
-      'place' => array(),
       'content' => array(),
+      'story_place_id' => array(),
       'pos_x' => array(),
       'pos_y' => array(),
       'created_at' => array(),

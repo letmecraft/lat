@@ -12,11 +12,18 @@ Story:
     started_at:     { type: timestamp, notnull: true }
     ended_at:       { type: timestamp, notnull: true }
     cover:          { type: string(255), notnull: true }
-    place:          { type: string(255), notnull: true }
     content:        { type: string(), notnull: true }
+    story_place_id:       { type: integer }
     #localisation of the story on homepage map
     pos_x:          { type: int(5), notnull: true, default: 0 }
     pos_y:          { type: int(5), notnull: true, default: 0 }
+  relations:
+    StoryPlace:
+      foreignAlias: Stories
+
+StoryPlace:
+  columns:
+    title:          { type: string(255), notnull: true }
 
 #  Journeys -------
 
