@@ -64,9 +64,11 @@ h1, h2, h3
 }
 
 h1 {
-    font-size: 21px;
+    font-size: 1.3em;
     font-family: "TitilliumText22LRegular";
-    color: #658686;
+    color: #fff;
+    padding: 16px 20px 10px 20px;
+    background: rgb(184, 209, 209);
 }
 
 h2 {
@@ -229,11 +231,9 @@ em { font-style: italic; }
 ----------------------------------------------------------------------------- */
 
 body {
-    width: 940px;
-    font: normal 0.6em/1em, Helvetica, Arial, Garuda, sans-serif;
+    font: normal 0.8em/1em Helvetica, Arial, Garuda, sans-serif;
     font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans,sans-serif;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px 35px 70px 70px;
     background: #efefef;
 }
 
@@ -245,38 +245,68 @@ header {
 }
 
 /* -----------------------------------------------------------------------------
+    Main elements : Menu
+----------------------------------------------------------------------------- */
+
+#menu {
+    text-transform: uppercase;
+    width: 180px;
+    float: left;
+    height: 200px;
+    font-family: "TitilliumText22LRegular";
+    padding: 50px 0 0 0;
+}
+
+#menu li {
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------------------------
     Main elements : Content
 ----------------------------------------------------------------------------- */
 
 #sf_admin_container {
     background: #fff;
-    padding: 25px;
+    margin-left: 200px;
     -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
             border-radius: 3px;
 }
 
-/* -----------------------------------------------------------------------------
-    Main elements : Footer
------------------------------------------------------------------------------ */
+
+.notice, .error {
+    padding: 32px 20px 20px 20px;
+    font-weight: bold;
+}
+
+.notice { color: #45B16C }
+.error { color: #991818 }
 
 /* -----------------------------------------------------------------------------
     Specific elements
 ----------------------------------------------------------------------------- */
 
+#sf_admin_container .sf_admin_form fieldset {
+    padding: 20px;
+}
+
 #sf_admin_container .sf_admin_form_field_content textarea  {
-    width: 860px;
     height: 320px;
     margin-top: 10px;
+    width: 100%;
+    max-width: 732px;
+    
 }
 
 #sf_admin_container .story_map_position label {
     float: none;
-    margin-left: 10px;
+}
+
+#sf_admin_container .sf_admin_form_row.story_map_position {
+    margin-left: 23px;
 }
 
 #sf_admin_container .sf_admin_form_row.story_map_position .content {
-    width: 861px;
     height: 517px;
     position: relative;
     margin-bottom: 50px;
@@ -327,6 +357,17 @@ header {
     border-radius-bottom-left: 5px;
 }
 
+.sf_admin_td_actions li {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    top: 11px;
+}
+
+.sf_admin_td_actions li:last-child {
+    margin-right: 0;
+}
+
 #sf_admin_container fieldset {
     border: none;
     padding: 10px;
@@ -334,7 +375,7 @@ header {
 
 .sf_admin_list {
     padding: 0 20px;
-    margin: 20px 0 20px 0;
+    margin: 2px 0 20px 0;
 }
 
 .sf_admin_list table {
@@ -360,9 +401,18 @@ header {
     border-top: 1px solid #dedede;
 }
 
+.sf_admin_list tr th {
+    text-align: left;
+}
+
+#sf_admin_container .sf_admin_list tfoot tr th {
+    padding-top: 28px;
+    border-bottom: 0;
+}
+
 #sf_admin_container .sf_admin_list tr td,
 #sf_admin_container .sf_admin_list tr th {
-    padding: 8px 15px;
+    padding: 13px 15px 9px 15px;
     border-bottom: none;
     vertical-align: middle;
 }
@@ -508,4 +558,5 @@ display: none;
 
 #sf_admin_container ul.sf_admin_actions li {
     margin-right: 20px;
+    display: inline;
 }

@@ -27,6 +27,10 @@
 
         <?php include_partial('default/header') ?>
 
+        <!-- Aside -->
+
+        <?php include_partial('default/menu') ?>
+
         <!-- Content -->
 
         <?php echo $sf_content ?>

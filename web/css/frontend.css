@@ -240,13 +240,12 @@ html {
     height: 100%;
 }
 
-body{
+body {
     font: normal 0.96em/1.79em, Helvetica, Arial, Garuda, sans-serif;
     font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans,sans-serif;
     min-width: 960px;
     height: 100%;
     overflow: hidden;
-    background: url("../imageS/bg.jpg");
 }
 
 /* -----------------------------------------------------------------------------
