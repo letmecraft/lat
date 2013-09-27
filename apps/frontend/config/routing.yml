@@ -13,6 +13,10 @@ bio:
   url:   /michael-charavin-guide-polaire
   param: { module: default, action: bio }
 
+journey_index:
+  url:   /prochains-voyages
+  param: { module: journey, action: index }
+
 contact:
   url:   /me-contacter
   param: { module: default, action: contact }

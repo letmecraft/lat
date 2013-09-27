@@ -18,9 +18,9 @@ class Journey extends BaseJourney
     const SEASON_SPRING = 4;
 
     static $seasons = array(
-        self::SEASON_SUMMER => 'ÉTÉ',
-        self::SEASON_AUTUMN => 'AUTOMNE',
-        self::SEASON_WINTER => 'HIVER',
-        self::SEASON_SPRING => 'PRINTEMPS',
+        self::SEASON_SUMMER => 'Été',
+        self::SEASON_AUTUMN => 'Automne',
+        self::SEASON_WINTER => 'Hiver',
+        self::SEASON_SPRING => 'Printemps',
     );
 }

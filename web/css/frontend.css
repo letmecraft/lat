@@ -132,11 +132,11 @@ a:active {
     border: none;
     padding: 12px 10px 9px 10px;
     font-size: 13px;
-    width: 100%;
+    width: 92%;
 }
 
 #content textarea {
-    height: 130px;
+    height: 170px;
     width: 100%;
 }
 
@@ -339,11 +339,10 @@ li.type-text {
     color: #000000;
     font-size: 13px;
     text-align: justify;
-    width: 50vh;
+    width: 320px;
     line-height: 16px;
     margin-right: 35px;
     padding-top: 8px;
-    -webkit-column-count: 2;
     overflow: hidden;
 }
 
@@ -456,8 +455,73 @@ body.bio #content .h3.full-bio:hover {
 }
 
 /* -----------------------------------------------------------------------------
+    Specific page : Journey
+----------------------------------------------------------------------------- */
+
+body.journey .slidee > li {
+    width: 510px;
+}
+
+body.journey .slidee > li:first-child {
+    width: 320px;
+}
+
+
+
+body.journey table {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+body.journey .fil-rouge {
+    margin-top: 30px;
+}
+
+body.journey table td {
+    text-align: center;
+    padding: 12px 10px 8px 10px;
+    border-bottom: solid 1px #efefef;
+}
+
+body.journey table tr:last-child td {
+    border-bottom: none;
+}
+
+body.journey table .title {
+    font-weight: bold;
+}
+
+body.journey table .image img {
+    width: 50px;
+
+}
+
+body.journey table .image {
+    padding: 6px 8px 4px 12px;
+    width: 50px;
+}
+
+body.journey table .title,
+body.journey table .requirements
+{
+    width: 300px;
+    text-align: left;
+}
+
+body.journey tbody tr:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------------------------------------
     Specific page : Contact
 ----------------------------------------------------------------------------- */
+
+body.contact .slidee li:nth-child(2) {
+    margin-top: 155px;
+}
 
 body.contact #content blockquote {
     margin-bottom: 26px;
@@ -467,64 +531,13 @@ body.contact #content {
     margin-bottom: 26px;
 }
 
-#contact table {
-    margin-top: 20px;
-    margin-bottom: 0;
+body.contact #frame {
+    height: 100%;
 }
 
-
-#contact .fil-rouge {
-    margin-top: 30px;
+body.contact #controls {
+    display: none;
 }
-
-#contact table td {
-    text-align: center;
-    padding: 12px 10px 8px 10px;
-    border-bottom: solid 1px #efefef;
-}
-
-#contact table tr:last-child td {
-    border-bottom: none;
-}
-
-#contact table .title {
-    font-weight: bold;
-}
-
-#contact table .image img {
-    width: 50px;
-    
-}
-
-#contact table .image {
-    padding: 6px 8px 4px 12px;
-    width: 50px;
-}
-
-#contact table .title,
-#contact table .requirements
-{
-    width: 300px;
-    text-align: left;
-}
-
-#contact tbody tr:hover {
-    background: #f4f4f4;
-    cursor: pointer;
-}
-
-#main .container article.type-text {
-    margin-right: 75px;
-}
-
-#main .container article.type-text.expes {
-    width: 540px;
-}
-
-#contact #main form {
-    margin-top: 20px;
-}
-
 
 /* -----------------------------------------------------------------------------
     Specific page : Home
@@ -683,7 +696,7 @@ body.story .cover .stamp span.separator.top { top: 10px; }
 
 @media screen and (max-height: 780px) {
     #frame {
-        height: 51vh;
+        height: 57vh;
     }
 }
 

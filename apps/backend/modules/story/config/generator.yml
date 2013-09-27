@@ -17,7 +17,7 @@ generator:
         title:
           label: Titre
         is_published:
-          label: Est publiée ?
+          label: Publié ?
         started_at:
           label: Date de début
         ended_at:

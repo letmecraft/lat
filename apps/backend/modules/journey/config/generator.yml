@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Journey
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          journey
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_published:
+          label: Publié ?
+        title:
+          label: Titre
+        doc:
+          label: Complément PDF
+        cover:
+          label: Couverture
+        from_date:
+          label: Date de début
+        to_date:
+          label: Date de fin
+        season:
+          label: Saison
+      list:
+        title: Voyages en partances
+        display: [=title]
+        object_actions:
+          _edit:
+            label: Modifier
+          _delete:
+            label: Supprimer
+      filter:
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~

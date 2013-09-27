@@ -1,9 +1,10 @@
 <footer>
     <ul>
-        <?php $ac = get_slot('bodyId', 'default') ?>
+        <?php $ac = get_slot('bodyClass', 'default') ?>
         <li><a href="<?php echo url_for("@homepage") ?>" <?php if($ac == "home" || $ac == "story") echo 'class="active"' ?>>Carnets d'expéditions & photographies</a></li>
         <li><a href="<?php echo url_for("@bio") ?>" <?php if($ac == "bio") echo 'class="active"' ?>>Bio</a></li>
         <!--<li><a href="<?php echo url_for("@publication") ?> <?php if($ac == "publication") echo 'class="active"' ?>">Publications</a></li>-->
+        <li><a href="<?php echo url_for("@journey_index") ?>" <?php if($ac == "journey") echo 'class="active"' ?>>Prochains départs</a></li>
         <li><a href="<?php echo url_for("@contact") ?>" <?php if($ac == "contact") echo 'class="active"' ?>>Contact</a></li>
         <li class="colophon">Tout droit reservés<br /><span class="credits">Crédits : <a target="_blank" href="http://www.ostrogo.fr/">Ostrogo</a> + <a target="_blank" href="http://letmecraft.com">Letmecraft</a></span></li>
     </ul>
