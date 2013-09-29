@@ -55,7 +55,7 @@ class defaultActions extends sfActions
                 $this->getUser()->setFlash('notice', 'Votre message a bien été envoyé. Merci !');
 
                 if(!$nbMsgSent) {
-                    $this->getMailer()->composeAndSend("thomas.pob@gmail.com", "blacksad", "Rapports d'envois", $failures);
+                    $this->getMailer()->composeAndSend("blacksad", "thomas.pob@gmail.com", "Rapports d'envois", $failures);
                 }
 
               } catch (Exception $e) {
