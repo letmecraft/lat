@@ -26,7 +26,7 @@ generator:
           label: Couverture
         content:
           label:  Contenus
-        story_place_id:
+        place_id:
           label: Lieu
       list:
         title: Carnets d'expéditions et photographies

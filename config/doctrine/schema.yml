@@ -37,6 +37,7 @@ Journey:
     from_date:      { type: timestamp, notnull: true }
     to_date:        { type: timestamp, notnull: true }
     season:         { type: int(1), notnull: true, default: 1 }
+    description:    { type: string(), notnull: true }
   relations:
     Place:
       foreignAlias: Journeys

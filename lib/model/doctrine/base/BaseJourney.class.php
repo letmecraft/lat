@@ -13,6 +13,7 @@
  * @property timestamp $from_date
  * @property timestamp $to_date
  * @property int $season
+ * @property string $description
  * @property Place $Place
  * 
  * @method string    getTitle()        Returns the current record's "title" value
@@ -23,6 +24,7 @@
  * @method timestamp getFromDate()     Returns the current record's "from_date" value
  * @method timestamp getToDate()       Returns the current record's "to_date" value
  * @method int       getSeason()       Returns the current record's "season" value
+ * @method string    getDescription()  Returns the current record's "description" value
  * @method Place     getPlace()        Returns the current record's "Place" value
  * @method Journey   setTitle()        Sets the current record's "title" value
  * @method Journey   setIsPublished()  Sets the current record's "is_published" value
@@ -32,6 +34,7 @@
  * @method Journey   setFromDate()     Sets the current record's "from_date" value
  * @method Journey   setToDate()       Sets the current record's "to_date" value
  * @method Journey   setSeason()       Sets the current record's "season" value
+ * @method Journey   setDescription()  Sets the current record's "description" value
  * @method Journey   setPlace()        Sets the current record's "Place" value
  * 
  * @package    lat
@@ -81,6 +84,11 @@ abstract class BaseJourney extends sfDoctrineRecord
              'notnull' => true,
              'default' => 1,
              'length' => 1,
+             ));
+        $this->hasColumn('description', 'string', null, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => '',
              ));
     }
 

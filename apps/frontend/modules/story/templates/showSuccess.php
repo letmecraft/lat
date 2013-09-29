@@ -5,21 +5,20 @@
 <div id="content">
 
     <section id="content-header">
-        <div class="filters">
+        <!--<div class="filters">
             <a class="active" data-filter="all" href="#"><img src="/images/filter-all.png" alt="texte + images" /></a>
             <span class="separator"></span>
             <a class="text" data-filter="text" href="#"><img src="/images/filter-text.png" alt="texte" /></a>
             <span class="separator"></span>
             <a class="images" data-filter="image" href="#"><img src="/images/filter-images.png" alt="images" /></a>
-        </div>
+        </div>-->
         
         <h1 class="h2"><?php echo $story->title ?></h1>
     </section>
 
     <section id="frame">
-        <ul class="slidee">
 
-            
+        <ul class="slidee">
 
             <?php echo $story->getRawValue()->getContent() ?>
             

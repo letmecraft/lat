@@ -21,6 +21,7 @@ abstract class BaseJourneyFormFilter extends BaseFormFilterDoctrine
       'from_date'    => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'to_date'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'season'       => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'description'  => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(
@@ -32,6 +33,7 @@ abstract class BaseJourneyFormFilter extends BaseFormFilterDoctrine
       'from_date'    => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'to_date'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'season'       => new sfValidatorPass(array('required' => false)),
+      'description'  => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('journey_filters[%s]');
@@ -60,6 +62,7 @@ abstract class BaseJourneyFormFilter extends BaseFormFilterDoctrine
       'from_date'    => 'Date',
       'to_date'      => 'Date',
       'season'       => 'Text',
+      'description'  => 'Text',
     );
   }
 }

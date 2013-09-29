@@ -20,18 +20,23 @@ class JourneyTable extends Doctrine_Table
     public function getBySeason()
     {
         $results = $this->createQuery()
-            ->fetchArray();
+            ->orderBy("from_date")
+            ->where("is_published = ?", true)
+            ->execute();
 
-        $seasons = array();
+        $journeys = array();
 
-        foreach ($results as $result) {
-            if(array_key_exists($result['season'], $seasons)) {
-                array_push($seasons[$result['season']], $result);
-            } else {
-                $seasons[$result['season']][0] = $result;
+        foreach ($results as $journey) {
+
+            $y = date('Y', time($journey->getFromDate()));
+
+            if(!isset($journeys[$y][$journey->getSeason()])) {
+                $journeys[$y][$journey->getSeason()] = array();
             }
+
+            array_push($journeys[$y][$journey->getSeason()], $journey);
         }
 
-        return $seasons;
+        return $journeys;
     }
 }

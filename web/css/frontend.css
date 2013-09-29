@@ -130,14 +130,14 @@ a:active {
 {
     background: #e7eded;
     border: none;
-    padding: 12px 10px 9px 10px;
+    padding: 8px;
     font-size: 13px;
     width: 92%;
 }
 
 #content textarea {
-    height: 170px;
-    width: 100%;
+    height: 125px;
+    width: 92%;
 }
 
 #content select {
@@ -253,7 +253,7 @@ body {
 ----------------------------------------------------------------------------- */
 
 header {
-    margin: 50px 35px 70px 70px;
+    margin: 50px 35px 35px 70px;
     position: relative;
     z-index: 1000;
 }
@@ -303,7 +303,7 @@ header .headline img {
 /* Frame */
 
 #frame {
-    height: 65vh;
+    height: 71vh;
     min-height: 289px;
     -webkit-transition: 150ms ease all;
 }
@@ -339,11 +339,18 @@ li.type-text {
     color: #000000;
     font-size: 13px;
     text-align: justify;
-    width: 320px;
+    width: 260px;
     line-height: 16px;
     margin-right: 35px;
     padding-top: 8px;
     overflow: hidden;
+    -webkit-transition: all ease 150ms;
+}
+
+li.type-text.double {
+    width: 550px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 30px;
 }
 
 li.type-text.insert {
@@ -356,7 +363,8 @@ li.type-text.insert {
 
 #controls {
     margin: 32px 35px 0 70px;
-    bottom: 85px;
+    bottom: 20px;
+    positiob: relative;
 }
 
 #scrollbar {
@@ -466,13 +474,10 @@ body.journey .slidee > li:first-child {
     width: 320px;
 }
 
-
-
 body.journey table {
     margin-top: 20px;
     margin-bottom: 0;
 }
-
 
 body.journey .fil-rouge {
     margin-top: 30px;
@@ -492,9 +497,14 @@ body.journey table .title {
     font-weight: bold;
 }
 
-body.journey table .image img {
-    width: 50px;
+body.journey table .description {
+    font-style: italic;
+    font-weight: normal;
+}
 
+body.journey table .image img {
+    width: 120px;
+    height: 70px;
 }
 
 body.journey table .image {
@@ -511,17 +521,12 @@ body.journey table .requirements
 
 body.journey tbody tr:hover {
     background: #f4f4f4;
-    cursor: pointer;
 }
 
 
 /* -----------------------------------------------------------------------------
     Specific page : Contact
 ----------------------------------------------------------------------------- */
-
-body.contact .slidee li:nth-child(2) {
-    margin-top: 155px;
-}
 
 body.contact #content blockquote {
     margin-bottom: 26px;
@@ -688,16 +693,35 @@ body.story .cover .stamp span.separator.top { top: 10px; }
     MQueries
 ----------------------------------------------------------------------------- */
 
+body.bio li.type-text:first-child { width: 200px; }
+body.bio li.type-text:first-child img { -webkit-transition: ease 150ms all }
+
 @media screen and (max-height: 900px) {
     #frame {
-        height: 54vh;
+        height: 68vh;
     }
+
+    li.type-text {
+        width: 320px;
+    }
+
+    body.bio li.type-text:first-child { width: 200px; }
+
+    body.bio li.type-text:first-child img { width: 80%; }
 }
 
 @media screen and (max-height: 780px) {
     #frame {
-        height: 57vh;
+        height: 62vh;
     }
+
+    li.type-text {
+        width: 370px;
+    }
+
+    body.bio li.type-text:first-child { width: 200px; }
+    body.bio li.type-text:first-child img { width: 50%; }
+
 }
 
 /* -----------------------------------------------------------------------------

@@ -101,12 +101,13 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'title' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Titre',),
       'is_published' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Publié ?',),
-      'place_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
+      'place_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',  'label' => 'Lieu',),
       'doc' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Complément PDF',),
       'cover' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Couverture',),
       'from_date' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Date de début',),
       'to_date' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',  'label' => 'Date de fin',),
       'season' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Saison',),
+      'description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
     );
   }
 
@@ -122,6 +123,7 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'from_date' => array(),
       'to_date' => array(),
       'season' => array(),
+      'description' => array(),
     );
   }
 
@@ -137,6 +139,7 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'from_date' => array(),
       'to_date' => array(),
       'season' => array(),
+      'description' => array(),
     );
   }
 
@@ -152,6 +155,7 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'from_date' => array(),
       'to_date' => array(),
       'season' => array(),
+      'description' => array(),
     );
   }
 
@@ -167,6 +171,7 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'from_date' => array(),
       'to_date' => array(),
       'season' => array(),
+      'description' => array(),
     );
   }
 
@@ -182,6 +187,7 @@ abstract class BaseJourneyGeneratorConfiguration extends sfModelGeneratorConfigu
       'from_date' => array(),
       'to_date' => array(),
       'season' => array(),
+      'description' => array(),
     );
   }
 

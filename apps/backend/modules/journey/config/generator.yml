@@ -28,6 +28,8 @@ generator:
           label: Date de fin
         season:
           label: Saison
+        place_id:
+          label: Lieu
       list:
         title: Voyages en partances
         display: [=title]

@@ -24,6 +24,7 @@ abstract class BaseJourneyForm extends BaseFormDoctrine
       'from_date'    => new sfWidgetFormDateTime(),
       'to_date'      => new sfWidgetFormDateTime(),
       'season'       => new sfWidgetFormInputText(),
+      'description'  => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
@@ -36,6 +37,7 @@ abstract class BaseJourneyForm extends BaseFormDoctrine
       'from_date'    => new sfValidatorDateTime(),
       'to_date'      => new sfValidatorDateTime(),
       'season'       => new sfValidatorPass(array('required' => false)),
+      'description'  => new sfValidatorString(),
     ));
 
     $this->widgetSchema->setNameFormat('journey[%s]');

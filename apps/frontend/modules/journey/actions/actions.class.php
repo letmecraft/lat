@@ -17,6 +17,6 @@ class journeyActions extends sfActions
     */
     public function executeIndex(sfWebRequest $request)
     {
-        $this->seasons = Doctrine_Core::getTable('Journey')->getBySeason();
+        $this->years = Doctrine_Core::getTable('Journey')->getBySeason();
     }
 }

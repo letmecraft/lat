@@ -75,7 +75,7 @@ class defaultActions extends sfActions
               /* Redirect */
               $this->redirect("@contact");
           } else {
-              $this->getUser()->setFlash('error', 'Il semble que certains champs ne soit pas remplis ou contiennent des erreurs');
+              $this->getUser()->setFlash('error', 'Certains champs ne soit pas remplis ou votre email n\'est pas valide.');
           }
       }
     }

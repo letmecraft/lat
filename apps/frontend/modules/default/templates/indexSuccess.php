@@ -9,7 +9,7 @@
             <div class="wrapper"><div class="content">
             <?php foreach ( $stories as $story ): ?>
             <p>
-                <span class="log-country"><?php echo $story->StoryPlace ?></span>
+                <span class="log-country"><?php echo $story->Place ?></span>
                 <?php if($story->type == Story::TYPE_EXPE): ?>
                 <span class="log-type"><img src="/images/log-list/log-list-expe.png" alt="Carnet d'expédition"/></span>
                 <?php else: ?>

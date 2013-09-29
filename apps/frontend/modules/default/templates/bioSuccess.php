@@ -21,7 +21,7 @@
             </li>
             
 
-            <li class="type-text">
+            <li class="type-text bio">
                 <!--<p class="intro">Depuis 2012, plus de <strong>1100 jours</strong> consacrés aux raids itinérants et expéditions
                 en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</p>-->
                  <h2 class="h3">Ma pratique personnelle</h2>
