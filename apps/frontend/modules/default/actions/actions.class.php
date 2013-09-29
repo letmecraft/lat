@@ -32,8 +32,6 @@ class defaultActions extends sfActions
 
     public function executeContact(sfWebRequest $request)
     {
-        $this->seasons = Doctrine_Core::getTable('Journey')->getBySeason();
-
         $this->form = new ContactMessagesForm();
 
         if($request->isMethod('post')) {
