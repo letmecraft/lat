@@ -1,5 +1,5 @@
 <?php slot('bodyClass', 'journey') ?>
-<?php slot('pageTitle', 'Voyage en partance') ?>
+<?php slot('pageTitle', 'Prochains départs') ?>
 <?php setlocale(LC_TIME, "fr_FR"); ?>
 <?php use_helper('Text') ?>
 
@@ -12,11 +12,12 @@
     <section id="frame">
         <ul class="slidee">
 
-            <li class="type-text">
-                <h3 class="h3">Fil rouge de mes voyages</h3>
-                Des destinations atypiques & et des voyages inédits ; <br />
+            <li class="type-small">
+                <h3 class="h3">Fil rouge</h3>
+                <p>Des destinations atypiques & et des voyages inédits ; 
                 Des expéditions & des thématiques spécifiques (itinérance, autonomie, snowkite, rando-voile) ;
-                Un co-encadrement et/ou des petits groupes. Votre voyage révé n'est pas ci-dessus. Parlons en !
+                Un co-encadrement et/ou des petits groupes.</p>
+                <p>Votre voyage révé n'est pas ci-dessus. Parlons en !</p>
             </li>
 
             <?php foreach ($years as $year=>$seasons): ?>

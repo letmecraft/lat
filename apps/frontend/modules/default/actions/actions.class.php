@@ -70,6 +70,7 @@ class defaultActions extends sfActions
 
               //$this->form->getObject()->save();
 
+
               /* Redirect */
               $this->redirect("@contact");
           } else {

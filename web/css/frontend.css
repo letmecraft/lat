@@ -77,6 +77,7 @@ h1, hr {
     font-weight: normal;
     font-family: "TitilliumText22LLight";
     font-size: 24px;
+    text-align: left;
 }
 
 .h3 {
@@ -84,7 +85,8 @@ h1, hr {
     color: #658686;
     font-size: 1.2em;
     text-transform: uppercase;
-    line-height: 16px;
+    line-height: 18px;
+    text-align: left;
 }
 
 .h2:after { content: "_"; }
@@ -185,6 +187,7 @@ a:active {
     font-family: Georgia, serif;
     color: #767676;
     margin-top: -16px;
+    text-align: left;
 }
 
 #content blockquote {
@@ -228,8 +231,8 @@ a:active {
     margin-left: 15px;
 }
 
-#content .slidee li > li {
-    margin-bottom: 5px;
+#content .slidee li li {
+    margin-bottom: 15px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -303,8 +306,8 @@ header .headline img {
 /* Frame */
 
 #frame {
-    height: 71vh;
-    min-height: 289px;
+    height: 69vh;
+    min-height: 468px;
     -webkit-transition: 150ms ease all;
 }
 
@@ -328,6 +331,7 @@ li.type-empty {
 
 li.type-image {
     height: 100%;
+    width: 90%;
 }
 
 li.type-image img {
@@ -345,16 +349,35 @@ li.type-text {
     padding-top: 8px;
     overflow: hidden;
     -webkit-transition: all ease 150ms;
+    height: 100%;
 }
 
-li.type-text.double {
-    width: 550px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 30px;
+li.type-small {
+    color: #000000;
+    font-size: 13px;
+    text-align: left;
+    width: 200px;
+    line-height: 16px;
+    margin-right: 35px;
+    padding-top: 8px;
+    overflow: hidden;
+    -webkit-transition: all ease 150ms;
+}
+
+li.type-default {
+    color: #000000;
+    font-size: 13px;
+    text-align: justify;
+    width: 260px;
+    line-height: 16px;
+    margin-right: 35px;
+    padding-top: 8px;
+    overflow: hidden;
+    -webkit-transition: all ease 150ms;
 }
 
 li.type-text.insert {
-    padding: 18px 15px 15px 15px;
+    padding: 18px 25px 5px 15px;
     background: #f2f2f2;
     width: 250px;
 }
@@ -363,8 +386,7 @@ li.type-text.insert {
 
 #controls {
     margin: 32px 35px 0 70px;
-    bottom: 20px;
-    positiob: relative;
+    position: relative;
 }
 
 #scrollbar {
@@ -471,7 +493,7 @@ body.journey .slidee > li {
 }
 
 body.journey .slidee > li:first-child {
-    width: 320px;
+    width: 220px;
 }
 
 body.journey table {
@@ -693,12 +715,17 @@ body.story .cover .stamp span.separator.top { top: 10px; }
     MQueries
 ----------------------------------------------------------------------------- */
 
-body.bio li.type-text:first-child { width: 200px; }
-body.bio li.type-text:first-child img { -webkit-transition: ease 150ms all }
+body.bio #content blockquote:before,
+body.bio #content blockquote:after {
+    content: none;
+}
+
+body.bio li.type-text:first-child { width: 230px; }
+body.bio li.type-text:first-child img { width: 99%; border: solid 1px #dedede; }
 
 @media screen and (max-height: 900px) {
     #frame {
-        height: 68vh;
+        height: 67vh;
     }
 
     li.type-text {
@@ -706,22 +733,24 @@ body.bio li.type-text:first-child img { -webkit-transition: ease 150ms all }
     }
 
     body.bio li.type-text:first-child { width: 200px; }
+}
 
-    body.bio li.type-text:first-child img { width: 80%; }
+@media screen and (max-height: 850px) {
+    #frame {
+        height: 64vh;
+    }
 }
 
 @media screen and (max-height: 780px) {
     #frame {
-        height: 62vh;
+        height: 61vh;
     }
 
     li.type-text {
         width: 370px;
     }
 
-    body.bio li.type-text:first-child { width: 200px; }
-    body.bio li.type-text:first-child img { width: 50%; }
-
+    body.bio #content li.type-text:first-child blockquote { font-size: 13px }
 }
 
 /* -----------------------------------------------------------------------------
@@ -737,6 +766,10 @@ body.bio li.type-text:first-child img { -webkit-transition: ease 150ms all }
 /* -----------------------------------------------------------------------------
     Non-semantic helpers
 ----------------------------------------------------------------------------- */
+
+.slidee li .align-left {
+    text-align: left;
+}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }

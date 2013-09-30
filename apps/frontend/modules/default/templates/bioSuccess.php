@@ -13,9 +13,8 @@
             <li class="type-text">
                 <p><img class="portrait" src="/images/mc-portrait.png" alt="Michael Charavin"/></p>
 
-                <blockquote>Accompagnateur en montagne, Moniteur Snowkite et VTT</blockquote>
-
-                <blockquote>De 2000 à 2010, plus de 1100 jours consacrés aux raids itinérants et expéditions en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</blockquote>
+                <blockquote>Né en 1970.<br />Accompagnateur en montagne,<br /> moniteur Snowkite et VTT.</blockquote>
+                <blockquote>De 2000 à 2013, plus de 1100 jours consacrés aux raids itinérants et expéditions en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</blockquote>
 
                 <p><a target="_blank" href="/content/dumb/bio/michael_charavin_biographie.pdf" class="h3 full-bio">&#10141; Biographie complète</a></p>
             </li>
@@ -60,7 +59,7 @@
                 Le partage d'aventures authentiques.</p>
             </li>
 
-            <li class="type-text">
+            <li class="type-text insert">
 
                 <h2 class="h3">Expéditions et voyages marquants</h2>
                 <ul>

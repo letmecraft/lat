@@ -10,7 +10,7 @@
 
     <section id="frame">
         <ul class="slidee">
-            <li class="type-text">
+            <li class="type-default">
                 
                 <h2 class="h3">Message</h2>
 
@@ -36,13 +36,14 @@
                 </form>
             </li>
 
-            <li class="type-text">
+            <li class="type-default">
                 <h2 class="h3">Coordonnées</h2>
 
-                <blockquote>Michael Charavin, La Touisse, 05380 Chateauroux-les-Alpes, France<br />
+                <blockquote>Michael Charavin, La Touisse, 05380 Chateauroux-les-Alpes, FR<br />
                 michael.charavin[at]gmail.com<br />+33 (0)6 13 93 72 95</blockquote>
 
-                <p><?php echo $sf_user->getFlash('error') ?></p>
+                <p class="align-left"><?php echo $sf_user->getFlash('error') ?></p>
+                <p class="align-left"><?php echo $sf_user->getFlash('notice') ?></p>
             </li>
         </ul>
     </section>
