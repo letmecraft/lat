@@ -1,6 +1,6 @@
 <?php slot('bodyClass', 'journey') ?>
 <?php slot('pageTitle', 'Prochains départs') ?>
-<?php setlocale(LC_TIME, "fr_FR"); ?>
+<?php setlocale(LC_TIME, "fr_FR.UTF-8"); ?>
 <?php use_helper('Text') ?>
 
 <div id="content">
