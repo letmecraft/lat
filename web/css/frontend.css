@@ -376,10 +376,17 @@ li.type-default {
     -webkit-transition: all ease 150ms;
 }
 
-li.type-text.insert {
+li.type-text.insert,
+li.type-small.insert{
     padding: 18px 25px 5px 15px;
     background: #f2f2f2;
     width: 250px;
+}
+
+#content .slidee li .insert {
+    padding: 18px 25px 5px 25px;
+    background: #f2f2f2;
+    margin-left: 0;
 }
 
 /* Controls */

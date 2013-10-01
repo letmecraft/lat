@@ -4,7 +4,7 @@
 <div id="content">
 
     <section id="content-header">
-        <h1 class="h2">Michael Charavin, guide spécialiste des régions polaires</h1>
+        <h1 class="h2">Michael Charavin, guide spécialiste des régions polaires et boréales</h1>
     </section>
 
     <section id="frame">
@@ -31,6 +31,20 @@
                 <p>Oui, dans ces environnements extrêmes, littéralement inhumains et même abiotiques, il y a une logique certaine à vouloir aller vite, à rechercher cette « excellence », à exhorter son corps et son mental à repousser ses propres limites... Oui, la performance ne se réduit pas à l'état de simple corollaire ou conséquence de l'aventure : elle en est le moteur, l'enjeu principal, le sens même du projet...</p>
             </li>
 
+            <li class="type-text insert">
+
+                <h2 class="h3">Expéditions et voyages marquants</h2>
+                <ul>
+                    <li>2250 km en kite-ski, du sud au nord du Groenland.</li>
+                    <li>1700 km à ski-pulka en Scandinavie, du sud de la Norvège au nord-ouest de la Finlande.</li>
+                    <li>Traversée hivernale du Vatnajökull (plus grand glacier d'Europe, Islande) en kite-ski.</li>
+                    <li>650 km à ski-pulka au Spitzberg.</li>
+                    <li>Séjour solitaire, hivernal et nocturne (à bord d'un voilier) sur la côte est du Spitzberg.</li>
+                    <li>Séjour de 14 mois en région sub-antarctique (archipels des Kerguelen)</li>
+                    <li>8000 km à VTT dans les Andes, de l'Altiplano bolivien à la Terre de Feu</li>
+                </ul>
+            </li>
+            
             <li class="type-text">
                 <h2 class="h3">Ma pratique professionnelle</h2>
                 <p class="subtitle">Itinérance, autonomie, belles lignes et curiosité géographique...</p>
@@ -46,32 +60,15 @@
             <li class="type-text">
                 <p>En Islande, et partout ailleurs, c'est cette connaissance intime du terrain qui m'anime, qui fait le fil d'Ariane de mes voyages guidés. Et c'est aussi de cela - du moins je l'espère - dont mes photographies témoignent...</p>
                 <blockquote>J'aime l'idée d'une unité, d'une concordance avec les lieux. D'un dépouillement.</blockquote>
-                <ul>
-                    <li>
-                        Très nombreux guidages, le plus souvent dans un mode itinérant et sans assistance à ski (nordique & randonnée),
-                        en snowkite, en kayak de mer, au groenland, en Norvège, au Spitzberg, en Islande, en Alaska, dans les terres Australes et Antarctiques Françaises.
-                    </li>
-                    <li>Rédactions d'articles dans la presse et sur les sites web spécialisés voyage / montagne / kayak</li>
-                </ul>
-                <p>Destinations atypiques & Voyages inédits (investigation sur des territoires peu ou pas pratiqués par les agences).
-                Expéditions & Thématiques spécifiques (itinérance, autonomie, snowkite, rando-voile) ; une connaissance approfondie des milieux polaires ; un savoir-faire technique et logistique.
-                Co-encadrement et/ou petits groupes.
-                Le partage d'aventures authentiques.</p>
-            </li>
-
-            <li class="type-text insert">
-
-                <h2 class="h3">Expéditions et voyages marquants</h2>
-                <ul>
-                    <li>2250 km en kite-ski, du sud au nord du Groenland.</li>
-                    <li>1700 km à ski-pulka en Scandinavie, du sud de la Norvège au nord-ouest de la Finlande.</li>
-                    <li>Traversée hivernale du Vatnajökull (plus grand glacier d'Europe, Islande) en kite-ski.</li>
-                    <li>650 km à ski-pulka au Spitzberg.</li>
-                    <li>Séjour solitaire, hivernal et nocturne (à bord d'un voilier) sur la côte est du Spitzberg.</li>
-                    <li>Séjour de 14 mois en région sub-antarctique (archipels des Kerguelen)</li>
-                    <li>8000 km à VTT dans les Andes, de l'Altiplano bolivien à la Terre de Feu</li>
+                <ul class="insert">
+                    <li>Très nombreux guidages, le plus souvent dans un mode itinérant et sans assistance.
+                    A ski (nordique & randonnée), en snowkite, à pied, en kayak de mer. Au groenland, en Norvège, au Spitzberg,
+                    en Islande, en Alaska, dans les terres Australes et Antarctiques Françaises.</li>
+                    <li>Rédactions d'articles dans la presse et sur les sites web spécialisés outdoor / voyage / montagne / kayak</li>
+                    <li>Test d'équipements de sport outdoor (<a href="http://expemag.com">expemag.com</a>)</li>
                 </ul>
             </li>
+
             <li class="type-empty"></li>
         </ul>
     </section>

@@ -23,8 +23,6 @@
 
     <body class="<?php include_slot('bodyClass', 'default') ?>">
 
-        
-
         <!-- Header -->
 
         <?php include_partial('default/header') ?>

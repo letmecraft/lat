@@ -12,12 +12,16 @@
     <section id="frame">
         <ul class="slidee">
 
-            <li class="type-small">
-                <h3 class="h3">Fil rouge</h3>
-                <p>Des destinations atypiques & et des voyages inédits ; 
-                Des expéditions & des thématiques spécifiques (itinérance, autonomie, snowkite, rando-voile) ;
-                Un co-encadrement et/ou des petits groupes.</p>
-                <p>Votre voyage révé n'est pas ci-dessus. Parlons en !</p>
+            <li class="type-small insert">
+                <h3 class="h3">Fil rouge de mes départs</h3>
+                <ul>
+                    <li>Destinations atypiques & Voyages inédits (investigation sur des territoires peu ou pas pratiqués par les agences).</li>
+                    <li>Expéditions & Thématiques spécifiques (itinérance, autonomie, snowkite, rando-voile).</li>
+                    <li>Une réelle connaissance des milieux polaires.</li>
+                    <li>Un savoir-faire technique et logistique.</li>
+                    <li>Co-encadrement et/ou petits groupes.</li>
+                    <li>Le partage d'aventures authentiques.</li>
+                </ul>
             </li>
 
             <?php foreach ($years as $year=>$seasons): ?>
