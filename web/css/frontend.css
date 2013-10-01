@@ -332,11 +332,27 @@ li.type-empty {
 li.type-image {
     height: 100%;
     width: 90%;
+    position: relative;
 }
 
 li.type-image img {
     width: 100%;
     height: 100%;
+}
+
+li.type-image .caption {
+    background: #333;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    display: none;
+}
+
+li.type-image .caption span {
+    padding: 20px;
+    display: block;
 }
 
 li.type-text {

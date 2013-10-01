@@ -31,6 +31,11 @@
                 <img src="/ups/images/story/<?php echo $story->id . "/" . $story->cover ?>" alt="" />
             </li>
 
+            <li class="type-image">
+                <img src="/ups/images/story/<?php echo $story->id . "/" . $story->cover ?>" alt="" />
+                <p class="caption"><span>C'est sur cette île de l'Atlantique Nord que nous avions jeté notre dévolu pour cette nouvelle expé en terres "polaires". La tentation était grande, pour nous qui arpentions régulièrement la contrée des Elfes et des Trolls, d'y dessiner une trajectoire parfaite</span></p>
+            </li>
+
             <?php echo $story->getRawValue()->getContent() ?>            
             <li class="type-empty"></li>
         </ul>

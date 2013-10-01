@@ -97,7 +97,7 @@ $(document).ready(function() {
 
     /* 1 Image captions */
 
-    $("article.type-image").mouseenter(function() {
+    $("li.type-image").mouseenter(function() {
         $(".caption", this).fadeIn(200);
     }).mouseleave(function() {
         $(".caption", this).fadeOut(200);
