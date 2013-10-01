@@ -1,6 +1,6 @@
 <?php slot('bodyClass', 'story') ?>
 <?php slot('pageTitle', 'Carnets d\'expéditions et photographies') ?>
-<?php setlocale(LC_TIME, "fr_FR"); ?>
+<?php setlocale(LC_TIME, "fr_FR.UTF-8"); ?>
 
 <div id="content">
 
