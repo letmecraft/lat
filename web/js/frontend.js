@@ -59,7 +59,7 @@ $(document).ready(function() {
     })
 
     function setImageRatio(e) {
-        var h = parseInt($("#frame li.type-image").css("height")) * 1.5;
+        var h = parseInt($("#frame li.type-image").css("height")) * 1.77777777;
         $("#frame li.type-image").css("width", h);
     }
 
