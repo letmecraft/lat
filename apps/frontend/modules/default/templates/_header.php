@@ -4,7 +4,7 @@
     </p>
     <hr />
     <p class="headline"><?php if(!include_slot('pageHeadline')): ?>
-    <b>Michael Charavin</b> - <b>Guide polaire</b>, vous présente
+    <b>Michael Charavin</b> - <b>Guide spécialiste des régions polaires</b>, vous présente
     ses photographies <img src="/images/picto-carnet-photos.png" alt="carnet photos" /> et ses expéditions
     <img src="/images/picto-carnet-expe.png" alt="carnet expéditions" />
     <?php endif; ?></p>

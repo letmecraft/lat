@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>Latitudes-Nord : <?php echo get_slot("pageTitle", "carnets d'expeditions et photos de Michael Charavin, guide polaire") ?></title>
+        <title>Latitudes-Nord : <?php echo get_slot("pageTitle", "Michael Charavin, guide spécialiste des régions polaires") ?></title>
         <meta name="description" content="">
         <meta name="author" content="">
 
