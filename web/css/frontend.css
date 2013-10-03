@@ -368,6 +368,8 @@ li.type-text {
     height: 100%;
 }
 
+
+
 li.type-small {
     color: #000000;
     font-size: 13px;
@@ -390,6 +392,10 @@ li.type-default {
     padding-top: 8px;
     overflow: hidden;
     -webkit-transition: all ease 150ms;
+}
+
+li.type-text .intro {
+    color: #658686;
 }
 
 li.type-text.insert,
