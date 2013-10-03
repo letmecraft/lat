@@ -21,6 +21,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=lat;dbname=lat
+      dsn:      mysql:host=localhost;dbname=lat
       username: lat
       password: shieGhoghthunnayryactUgyu
