@@ -13,7 +13,7 @@ test:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=lat
+      dsn:      mysql:host=localhost;dbname=lat_test
       username: lat
       password: shieGhoghthunnayryactUgyu
 
@@ -21,6 +21,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=lat
-      username: root
-      password: 
+      dsn:      mysql:host=lat;dbname=lat
+      username: lat
+      password: shieGhoghthunnayryactUgyu
