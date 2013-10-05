@@ -1,19 +1,19 @@
 <?php slot('bodyClass', 'journey') ?>
-<?php slot('pageTitle', 'Prochains départs') ?>
+<?php slot('pageTitle', 'Séjours encadrés') ?>
 <?php setlocale(LC_TIME, "fr_FR.UTF-8"); ?>
 <?php use_helper('Text') ?>
 
 <div id="content">
 
     <section id="content-header">
-        <h2 class="h2">Prochains départs</h2>
+        <h2 class="h2">Séjours encadrés</h2>
     </section>
 
     <section id="frame">
         <ul class="slidee">
 
             <li class="type-small insert">
-                <h3 class="h3">Fil rouge de mes départs</h3>
+                <h3 class="h3">Fil rouge de mes séjours</h3>
                 <ul>
                     <li>Destinations atypiques & Voyages inédits (investigation sur des territoires peu ou pas pratiqués par les agences).</li>
                     <li>Expéditions & Thématiques spécifiques (itinérance, autonomie, snowkite, rando-voile).</li>
