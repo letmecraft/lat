@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Info
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          info
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_published:
+          label: Publié ?
+        title:
+          label: Titre
+        subtitle:
+          label: Sous-titre
+        link:
+          label: Lien
+      list:
+        title: News
+        display: [=title]
+        object_actions:
+          _edit:
+            label: Modifier
+          _delete:
+            label: Supprimer
+      filter:
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -18,6 +18,8 @@ class defaultActions extends sfActions
     public function executeIndex(sfWebRequest $request)
     {
         $this->stories = Doctrine_Core::getTable('Story')->getPublished();
+
+        $this->info = Doctrine_Core::getTable('Info')->getLastPublished();
     }
 
     /**

@@ -186,7 +186,7 @@ a:active {
     font-style: italic;
     font-family: Georgia, serif;
     color: #767676;
-    margin-top: -16px;
+    margin-top: -12px;
     text-align: left;
 }
 
@@ -277,6 +277,7 @@ header .headline {
     font-family: Georgia, serif;
     font-style: italic;
     font-size: 13px;
+    color: #333;
 }
 
 header .headline img {
@@ -599,7 +600,50 @@ body.contact #controls {
     Specific page : Home
 ----------------------------------------------------------------------------- */
 
+body.home .info {
+    background: #fff;
+    z-index: 100;
+    position: absolute;
+    right: 130px;
+    bottom: 300px;
+    margin-left: 50px;
+    border: 1px solid #dedede;
+    width: 231px;
+    padding: 1px 0 0 1px;
+    -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+body.home .info .wrapper {
+    padding: 10px 5px 2px 5px;
+    background: #f2f2f2;
+    -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+body.home #content .info .subtitle {
+    margin-top: 0;
+    color: #666;
+    text-shadow: 1px 1px #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+body.home #content .info .h2:after {
+    content: none;
+}
+
+body.home #content .info .h2 {
+    font-size: 18px;
+    font-family: TitilliumText22LThin;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
 #map {
+    z-index: 10;
     width: 861px;
     height: 517px;
     left: 50%;

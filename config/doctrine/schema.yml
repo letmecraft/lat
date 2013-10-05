@@ -57,3 +57,19 @@ Publication:
     cover:          { type: string(255), notnull: true }
     description:    { type: string(255), notnull: true }
     published_at:   { type: timestamp, notnull: true }
+
+#  Info -------
+
+Info:
+  actAs:
+    Sluggable:
+      fields: [title]
+      unique: true
+      canUpdate: true
+    Timestampable: ~
+  columns:
+    title:          { type: string(255), notnull: true }
+    subtitle:       { type: string(255), notnull: true }
+    image:          { type: string(255), notnull: true }
+    link:           { type: string(255) }
+    is_published:   { type: boolean, notnull: true, default: 0 }

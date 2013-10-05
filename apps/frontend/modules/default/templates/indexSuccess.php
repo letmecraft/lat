@@ -22,6 +22,14 @@
         </div></div>
     </section>
 -->
+    <?php if($info != false): ?>
+    <section class="info"><div class="wrapper">
+        <p class="subtitle"><?php echo $info->subtitle ?></p>
+        <h2 class="h2"><?php echo $info->title ?></h2>
+        <img src="<?php echo $info->image ?>" alt="<?php echo $title->title ?>" />
+    </div></section>
+    <?php endif ?>
+
     <section id="map">
             <?php foreach ( $stories as $story ): ?>
             <li class="pin" style="left:<?php echo $story->pos_x ?>px; top:<?php echo $story->pos_y ?>px;" data-title="Blabla" data-cover="http://inapcache.boston.com/universal/site_graphics/blogs/bigpicture/ramadan2013a/bp1.jpg">
