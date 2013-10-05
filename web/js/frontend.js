@@ -1,5 +1,14 @@
 $(document).ready(function() {
     
+    /* 2 Bloc info */
+
+    $("body.home .info").hover(function() {
+        $(this).css("cursor", "pointer");
+    });
+
+    $("body.home .info").click(function() {
+        window.open($("a", this).attr("href"));
+    });
 
     //setFrameHeight();
     setImageRatio();

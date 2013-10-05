@@ -25,8 +25,8 @@
     <?php if($info != false): ?>
     <section class="info"><div class="wrapper">
         <p class="subtitle"><?php echo $info->subtitle ?></p>
-        <h2 class="h2"><?php echo $info->title ?></h2>
-        <img src="<?php echo $info->image ?>" alt="<?php echo $title->title ?>" />
+        <h2 class="h2"><a href="<?php echo $info->link ?>"><?php echo $info->title ?></a></h2>
+        <a href="<?php echo $info->link ?>"><img src="/ups/images/info/<?php echo $info->id ?>/<?php echo $info->image ?>" alt="<?php echo $title->title ?>" /></a>
     </div></section>
     <?php endif ?>
 
