@@ -13,6 +13,10 @@
 
         <meta name="viewport" content="width=device-width">
 
+        <!-- Facebook ugly stuff -->
+        <meta property="og:image" content="<?php echo get_slot("facebookImage", "http://lat.letmecraft.com/images/mc-portrait.jpg") ?>"/>
+        <meta property="og:title" content="<?php echo get_slot("facebookTitle", "Michael Charavin, guide spécialiste des régions polaires") ?>"/>
+
         <link rel="shortcut icon" href="/favicon.ico" />
 
         <link rel="stylesheet" href="/css/fonts.css">
