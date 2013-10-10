@@ -29,6 +29,7 @@ dev:
       delivery_strategy: realtime
 
 all:
+  use_flash:       true
   routing:
     class: sfPatternRouting
     param:
