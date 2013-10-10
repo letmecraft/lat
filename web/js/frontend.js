@@ -13,15 +13,15 @@ $(document).ready(function() {
     //setFrameHeight();
     setImageRatio();
 
-    /* 2 Text input switching
+    /* 2 Text input switching */
 
     $("input[type='text'], textarea").focus(function(e){
         if($(this).val() == $(this).attr("data-value")) $(this).val('');
     }).blur(function(e){
         if($(this).val() == '') $(this).val($(this).attr("data-value"));
-    }); */
+    }); 
 
-    /* 2 Newsletter */
+    /* 2 Newsletter 
 
     var Dial = {
         create : function(parent, content, w, h, posX, posY) {
@@ -57,7 +57,7 @@ $(document).ready(function() {
     $( "footer form input[type='text']" )
         .focus(function(e) {helpDial.fadeIn(200);})
         .focusout(function(e) {helpDial.fadeOut(350);})
-    
+    */
 
     /* 1 Slider */
 

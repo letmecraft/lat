@@ -27,6 +27,10 @@
 
     <body class="<?php include_slot('bodyClass', 'default') ?>">
 
+        <!-- Flashes -->
+
+        <?php include_partial('default/flashes') ?>
+
         <!-- Header -->
 
         <?php include_partial('default/header') ?>

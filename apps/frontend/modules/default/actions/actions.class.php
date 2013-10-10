@@ -85,11 +85,12 @@ class defaultActions extends sfActions
     {
         try {
             $this->addToMailingList($request->getPostParameter("email"));
-            return $this->renderText("Merci ! Vous êtes inscrit.");
+            $this->getUser()->setFlash("notice", "Merci ! Vous êtes inscrit.");
         } catch (Exception $e) {
-            return $this->renderText("Désolé ! Une erreur est survenue.");
+            $this->getUser()->setFlash("error", "Désolé une erreur est survenue, sur de ne pas être déjà inscrit ?");
         }
         
+        $this->redirect($request->getReferer());
     }
 
     /* Private */
@@ -106,9 +107,6 @@ class defaultActions extends sfActions
                             );
 
         $listId = '693f9b4f02';
-
-        // By default this sends a confirmation email - you will not see new members
-        // until the link contained in it is clicked!
         $retval = $api->listSubscribe( $listId, $subscriberEmail, NULL, 'html', false);
 
         if ($api->errorCode){

@@ -235,6 +235,27 @@ a:active {
     margin-bottom: 15px;
 }
 
+.flash {
+    z-index: 10000;
+    opacity: 0.8;
+    font-family: Georgia;
+    font-size: 15px;
+    font-style: italic;
+    position: absolute;
+    top: 13px;
+    padding: 5px 5px 0px 5px;
+    width: 60%;
+    height: 20px;
+    margin: 0 35px 0 70px;
+    -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+            -o-border-radius: 2px;
+                border-radius: 2px;
+}
+
+.flash.notice { background: #C1CFCF; }
+.flash.error { background: #C1CFCF; }
+
 /* -----------------------------------------------------------------------------
     Main elements : HTML & Body
 ----------------------------------------------------------------------------- */
@@ -455,7 +476,6 @@ footer {
 
 footer ul {
     display: inline-block;
-    width: 900px;
 }
 
 footer li {
@@ -509,6 +529,37 @@ footer .fb-like-wrapper {
     overflow: hidden;
     float: right;
     margin: 21px 3px 0 0;
+}
+
+footer form {
+    margin-left: 10px;
+    position: relative;
+    top: 19px;
+}
+
+footer form input[type="text"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    color: #2c2c2c;
+    font-family: Georgia, serif;;
+    font-style: italic;
+    border: solid 1px #f4f4f4;
+    padding: 3px 8px 3px 5px;
+    -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+            -o-border-radius: 2px;
+                border-radius: 2px;
+
+}
+
+footer form .button {
+    width: 25px;
+    height: 25px;
+    background: url("../images/footer-news-btn.png") no-repeat transparent;
+    border: none;
+    margin-left: 3px;
+    display: inline-block;
 }
 
 /* -----------------------------------------------------------------------------
