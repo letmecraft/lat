@@ -91,6 +91,7 @@ class defaultActions extends sfActions
         }
 
         echo $this->getUser()->getFlash("notice");
+        echo $this->getUser()->getFlash("error");
         die();
 
         $this->redirect($request->getReferer());
