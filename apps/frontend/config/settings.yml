@@ -33,5 +33,3 @@ all:
 
     # Enable the database manager
     use_database:           true
-
-    use_flash:              true

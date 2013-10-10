@@ -89,7 +89,9 @@ class defaultActions extends sfActions
         } catch (Exception $e) {
             $this->getUser()->setFlash("error", "Désolé une erreur est survenue, sur de ne pas être déjà inscrit ?");
         }
-        
+
+        die();
+
         $this->redirect($request->getReferer());
     }
 
