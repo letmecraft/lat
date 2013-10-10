@@ -18,6 +18,7 @@ test:
   .settings:
     error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
     web_debug:              false
+    cache:                  false
     no_script_name:         false
     etag:                   false
 
