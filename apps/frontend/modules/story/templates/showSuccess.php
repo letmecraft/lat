@@ -1,7 +1,7 @@
 <?php slot('bodyClass', 'story') ?>
 <?php slot('pageTitle', 'Carnets d\'expéditions et photographies') ?>
 <?php slot('facebookTitle', $story->title) ?>
-<?php slot('facebookImage', $sf_request->getUriPrefix() . "/ups/" . $story->id . "/" . $story->cover) ?>
+<?php slot('facebookImage', $sf_request->getUriPrefix() . "/ups/images/story/" . $story->id . "/" . $story->cover) ?>
 <?php setlocale(LC_TIME, "fr_FR.UTF-8"); ?>
 
 <div id="content">
