@@ -90,10 +90,6 @@ class defaultActions extends sfActions
             $this->getUser()->setFlash("error", "Désolé une erreur est survenue, sur de ne pas être déjà inscrit ?");
         }
 
-        echo $this->getUser()->getFlash("notice");
-        echo $this->getUser()->getFlash("error");
-        die();
-
         $this->redirect($request->getReferer());
     }
 
