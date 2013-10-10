@@ -5,6 +5,11 @@
 <div id="content">
 
     <section id="content-header">
+
+        <div class="sharing">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $sf_request->getUri() ?>" target="_blank">partager</a>
+        </div>
+
         <!--<div class="filters">
             <a class="active" data-filter="all" href="#"><img src="/images/filter-all.png" alt="texte + images" /></a>
             <span class="separator"></span>

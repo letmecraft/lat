@@ -8,6 +8,9 @@
         <li><a href="<?php echo url_for("@contact") ?>" <?php if($ac == "contact") echo 'class="active"' ?>>Contact</a></li>
         <li class="colophon">Tout droit reservés<br /><span class="credits">Crédits : <a target="_blank" href="http://www.ostrogo.fr/">Ostrogo</a> + <a target="_blank" href="http://letmecraft.com">Letmecraft</a></span></li>
     </ul>
+
+    <div class="fb-like-wrapper"><div class="fb-like" data-href="https://www.facebook.com/michaelcharavin" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-width="100" data-action="like" data-show-faces="true" data-send="false"></div></div>
+
 </footer>
    <!-- <form>
         <input type="text" id="email" name="email" value="S'inscrire à la newsletter..." data-value="S'inscrire à la newsletter..." />

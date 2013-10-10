@@ -46,6 +46,17 @@
         <script src="/vendors/sly-1.0.2.min.js"></script>
         <script src="/js/frontend.js"></script>
 
+        <!-- FB -->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <!-- GAnalytics -->
         <script>
             var _gaq=[['_setAccount','UA-7970141-4'],['_trackPageview']];
