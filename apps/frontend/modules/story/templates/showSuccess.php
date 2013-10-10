@@ -30,7 +30,9 @@
             <li class="type-image cover">
                 <div class="stamp">
                     <span class="separator top">_</span>
-                    <span class="date"><br />Du <?php echo strftime('%d %B', strtotime($story->started_at)) ?> au <?php echo strftime('%d %B %G', strtotime($story->ended_at)) ?></span><br />
+                    <br /><?php if($story->type == Story::TYPE_EXPE): ?>
+                    <span class="date">Du <?php echo strftime('%d %B', strtotime($story->started_at)) ?> au <?php echo strftime('%d %B %G', strtotime($story->ended_at)) ?></span>
+                    <?php endif ?><br />
                     <span class="title"><?php echo $story->title ?><br /></span><br />
                     <span class="separator bottom">_</span>
                 </div>
