@@ -17,7 +17,7 @@
 
 
 
-    <div class="fb-like" data-href="https://www.facebook.com/pages/Latitudes-Nord/422362331202323" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    <div class="fb-like-wrapper"><div class="fb-like" data-href="https://www.facebook.com/pages/Latitudes-Nord/422362331202323" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div></div>
 
 </footer>
    
