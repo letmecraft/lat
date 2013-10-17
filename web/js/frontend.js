@@ -6,7 +6,8 @@ $(document).ready(function() {
         $(this).css("cursor", "pointer");
     });
 
-    $("body.home .info").click(function() {
+    $("body.home .info").click(function(e) {
+        e.preventDefault();
         window.open($("a", this).attr("href"));
     });
 
