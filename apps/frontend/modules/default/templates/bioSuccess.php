@@ -25,7 +25,7 @@
                 en régions polaires & boréales ; dont près de 500 jours d'expédition et plus de 7000 km parcourus à ski ou en kite-ski.</p>-->
                  <h2 class="h3">Ma pratique personnelle</h2>
                 <p class="subtitle">la tentation du challenge et de la "performance"...</p>
-                <p>Les traversées des grands déserts de glace de notre planète ne laissent pour ainsi dire aucune place – faut-il le regretter ? - à l'insouciance et à la fantaisie. Sans grand intérêt paysagé, ces milieux extrêmes sont ceux du vide. Un vide radical, souverain et tyrannique. Leur intérêt intrinséque se trouve là, dans le vertige que provoque cette vacuité. Plus qu'une page blanche sur laquelle l'individu sera tenté de réécrire sa propre histoire, le désert de glace est le miroir de ses propres failles. Traverser le désert, c'est, en définitive, accepter de se battre contre ses propres dragons...</p>
+                <p>Les traversées des grands déserts de glace de notre planète ne laissent pour ainsi dire aucune place – faut-il le regretter ? - à l'insouciance et à la fantaisie. Sans grand intérêt paysager, ces milieux extrêmes sont ceux du vide. Un vide radical, souverain et tyrannique. Leur intérêt intrinséque se trouve là, dans le vertige que provoque cette vacuité. Plus qu'une page blanche sur laquelle l'individu sera tenté de réécrire sa propre histoire, le désert de glace est le miroir de ses propres failles. Traverser le désert, c'est, en définitive, accepter de se battre contre ses propres dragons...</p>
                 <p>C'est aussi l'expression d'une recherche d'absolu : simplicité, limpidité, virginité, pureté... Comme dans toute ascèse, s'ajoute à cela la quête, tout aussi indéniable, de la perfection et de l'engagement de l'individu. Ce sont là les racines (ou les germes) de la performance...</p>
                 <!--<blockquote>J'aime les lignes, les formes, le relief. La Wilderness. Sans oublier la notion du dépassement de soi.</blockquote>-->
                 <p>Oui, dans ces environnements extrêmes, littéralement inhumains et même abiotiques, il y a une logique certaine à vouloir aller vite, à rechercher cette « excellence », à exhorter son corps et son mental à repousser ses propres limites... Oui, la performance ne se réduit pas à l'état de simple corollaire ou conséquence de l'aventure : elle en est le moteur, l'enjeu principal, le sens même du projet...</p>
@@ -58,7 +58,7 @@
             </li>
 
             <li class="type-text">
-                <p>En Islande, et partout ailleurs, c'est cette connaissance intime du terrain qui m'anime, qui fait le fil d'Ariane de mes voyages guidés. Et c'est aussi de cela - du moins je l'espère - dont mes photographies témoignent...</p>
+                <p>En Islande, et partout ailleurs, c'est cette connaissance intime du terrain qui m'anime, qui fait le fil d'Ariane de mes voyages guidés. Et c'est aussi cela dont dont mes photographies témoignent.</p>
                 <blockquote>J'aime l'idée d'une unité, d'une concordance avec les lieux. D'un dépouillement.</blockquote>
                 <ul class="insert">
                     <li>Très nombreux guidages, le plus souvent dans un mode itinérant et sans assistance.
