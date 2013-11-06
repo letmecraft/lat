@@ -58,7 +58,7 @@
             </li>
 
             <li class="type-text">
-                <p>En Islande, et partout ailleurs, c'est cette connaissance intime du terrain qui m'anime, qui fait le fil d'Ariane de mes voyages guidés. Et c'est aussi cela dont dont mes photographies témoignent.</p>
+                <p>En Islande, et partout ailleurs, c'est cette connaissance intime du terrain qui m'anime, qui fait le fil d'Ariane de mes voyages guidés. Et c'est aussi cela dont mes photographies témoignent.</p>
                 <blockquote>J'aime l'idée d'une unité, d'une concordance avec les lieux. D'un dépouillement.</blockquote>
                 <ul class="insert">
                     <li>Très nombreux guidages, le plus souvent dans un mode itinérant et sans assistance.
