@@ -28,7 +28,7 @@ class JourneyTable extends Doctrine_Table
 
         foreach ($results as $journey) {
 
-            $y = date('Y', time($journey->getFromDate()));
+            $y = date('Y', strtotime($journey->getFromDate()));
 
             if(!isset($journeys[$y][$journey->getSeason()])) {
                 $journeys[$y][$journey->getSeason()] = array();
