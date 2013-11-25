@@ -7,5 +7,6 @@
     <b>Michael Charavin</b> - <b>Guide spécialiste des régions polaires</b>, vous présente
     ses photographies <img src="/images/picto-carnet-photos.png" alt="carnet photos" /> et ses expéditions
     <img src="/images/picto-carnet-expe.png" alt="carnet expéditions" />
+    <span class="copyright"> tous droits reservés</span>
     <?php endif; ?></p>
 </header>
