@@ -45,9 +45,8 @@ class defaultActions extends sfActions
               /* Send emails */
               $message = Swift_Message::newInstance()
               
-              ->setFrom($this->form->getValue('sender_email'))
               ->setTo(sfConfig::get('app_emailing_contacts'))
-              ->setSubject('[depuis ln.fr] '.$this->form->getValue('subject'))
+              ->setSubject('[depuis latitudes.fr] '.$this->form->getValue('subject'))
               ->setBody($this->form->getValue('message'));
 
               try {
