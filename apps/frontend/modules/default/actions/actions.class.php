@@ -48,7 +48,10 @@ class defaultActions extends sfActions
               ->setFrom("no-reply@latitudes-nord.fr")
               ->setTo(sfConfig::get('app_emailing_contacts'))
               ->setSubject('[depuis latitudes.fr] '.$this->form->getValue('subject'))
-              ->setBody($this->form->getValue('message'));
+              ->setBody(
+                'De' . $this->form->getValue('sender_name') . '(' . $this->form->getValue('sender_email') . ') : ' .
+                $this->form->getValue('message')
+              );
 
               try {
                 $nbMsgSent = @$this->getMailer()->send($message, $failures);
